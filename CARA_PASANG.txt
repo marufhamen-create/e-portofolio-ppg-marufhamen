@@ -1,0 +1,10 @@
+PERBAIKAN GALERI ARTEFAK LK 4 (PANCING EDU)
+
+Folder sasaran: C:\Users\USER\Downloads\PORTOFOLIO_PPG_FINAL_GABUNG
+
+1. Tutup tab website di Chrome (opsional).
+2. Ekstrak isi ZIP patch ini langsung ke folder sasaran tersebut, timpa file jika diminta.
+3. Buka kembali karya-inovasi.html melalui Chrome atau Live Server.
+4. Gulir ke 05 · ARTEFAK AKADEMIK. Seharusnya terlihat tiga kartu artefak (LK4, refleksi PPL, dokumentasi).
+
+Catatan: hanya karya-inovasi.html, assets/css/style.css dan gambar pratinjau baru yang diubah. Seluruh dokumen dan halaman Semester I/II tetap.

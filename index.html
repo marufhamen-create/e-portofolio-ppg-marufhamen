@@ -1,2594 +1,448 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Portfolio PPG Prajabatan | Maruf Hamen</title>
-  <meta name="description" content="E-Portfolio PPG Prajabatan PGSD Universitas Pattimura - Maruf Hamen">
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xh7ctp9dzk");
-</script>
-  <style>
-
-:root {
-  --deep: #06162b;
-  --navy: #0b2b4d;
-  --blue: #156fc2;
-  --sky: #10a8d7;
-  --gold: #e7b74c;
-  --orange: #f3983f;
-  --green: #209b79;
-  --paper: #ffffff;
-  --cream: #fff8e9;
-  --soft: #f3f8fd;
-  --text: #132238;
-  --muted: #66758c;
-  --line: rgba(12, 44, 77, .12);
-  --shadow: 0 24px 70px rgba(6, 22, 43, .16);
-  --shadow-soft: 0 14px 38px rgba(6, 22, 43, .09);
-  --radius: 28px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: var(--text);
-  line-height: 1.72;
-  background:
-    radial-gradient(circle at 8% 2%, rgba(16, 168, 215, .18), transparent 30%),
-    radial-gradient(circle at 88% 7%, rgba(231, 183, 76, .20), transparent 24%),
-    linear-gradient(180deg, #f7fbff 0%, #fbf7ef 48%, #f7fbff 100%);
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.wrap {
-  width: min(1180px, calc(100% - 34px));
-  margin: 0 auto;
-}
-
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 90;
-  background: rgba(255,255,255,.84);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(12, 44, 77, .08);
-  box-shadow: 0 10px 30px rgba(6,22,43,.04);
-}
-
-.nav {
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 10px 0;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  color: var(--navy);
-  min-width: 260px;
-}
-
-.brand-logos {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 9px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #ffffff, #edf8ff);
-  border: 1px solid rgba(12,44,77,.10);
-  box-shadow: 0 12px 30px rgba(21,111,194,.14);
-}
-
-.brand-logo {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  display: block;
-}
-
-.brand-title {
-  font-weight: 950;
-  letter-spacing: -.3px;
-  line-height: 1.15;
-}
-
-.brand-title small {
-  display: block;
-  margin-top: 4px;
-  color: var(--muted);
-  font-size: .86rem;
-  font-weight: 680;
-  letter-spacing: 0;
-}
-
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.links a {
-  padding: 8px 12px;
-  border-radius: 999px;
-  color: #3c4d64;
-  font-weight: 780;
-  font-size: .92rem;
-  transition: .22s ease;
-}
-
-.links a:hover,
-.links a.active {
-  background: #eaf4ff;
-  color: var(--navy);
-  transform: translateY(-1px);
-}
-
-.page-hero {
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  padding: 58px 0 46px;
-  border-radius: 0 0 46px 46px;
-  background:
-    radial-gradient(circle at 16% 16%, rgba(16,168,215,.34), transparent 30%),
-    radial-gradient(circle at 76% 13%, rgba(231,183,76,.30), transparent 28%),
-    linear-gradient(135deg, #06162b 0%, #0a3157 50%, #0e5f83 100%);
-  isolation: isolate;
-}
-
-.page-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px);
-  background-size: 44px 44px;
-  opacity: .23;
-  z-index: -2;
-}
-
-.page-hero h1 {
-  font-size: clamp(2.2rem, 5vw, 4.6rem);
-  line-height: 1.05;
-  letter-spacing: -2px;
-  max-width: 900px;
-}
-
-.page-hero h1 span {
-  color: var(--gold);
-}
-
-.page-hero p {
-  margin-top: 16px;
-  max-width: 820px;
-  color: rgba(255,255,255,.82);
-  font-size: 1.06rem;
-}
-
-.breadcrumb {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: rgba(255,255,255,.72);
-  font-weight: 800;
-  font-size: .86rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-
-.breadcrumb::before {
-  content: "";
-  width: 36px;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--gold), var(--sky));
-}
-
-.home-hero {
-  padding: 72px 0 58px;
-}
-
-.home-grid {
-  display: grid;
-  grid-template-columns: 1.08fr .92fr;
-  gap: 44px;
-  align-items: center;
-}
-
-.badge-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 18px;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 13px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.20);
-  background: rgba(255,255,255,.11);
-  color: rgba(255,255,255,.92);
-  font-weight: 850;
-  font-size: .88rem;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--gold);
-  box-shadow: 0 0 0 5px rgba(231,183,76,.16);
-}
-
-.home-hero h1 {
-  max-width: 770px;
-  font-size: clamp(2.55rem, 6vw, 5.35rem);
-  line-height: 1.02;
-  letter-spacing: -2.7px;
-  margin-bottom: 20px;
-}
-
-.home-hero h1 span {
-  color: var(--gold);
-  text-shadow: 0 18px 42px rgba(231,183,76,.18);
-}
-
-.home-lead {
-  max-width: 780px;
-  font-size: 1.08rem;
-  color: rgba(255,255,255,.82);
-  margin-bottom: 28px;
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  padding: 13px 18px;
-  border-radius: 16px;
-  font-weight: 950;
-  border: 1px solid transparent;
-  transition: .22s ease;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-primary {
-  color: #231707;
-  background: linear-gradient(135deg, #f6ce68, var(--gold));
-  box-shadow: 0 18px 36px rgba(231,183,76,.24);
-}
-
-.btn-ghost {
-  color: #fff;
-  background: rgba(255,255,255,.10);
-  border-color: rgba(255,255,255,.20);
-}
-
-.hero-stats,
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(100px, 1fr));
-  gap: 12px;
-}
-
-.stat {
-  position: relative;
-  padding: 16px;
-  border-radius: 22px;
-  background: rgba(255,255,255,.105);
-  border: 1px solid rgba(255,255,255,.15);
-  overflow: hidden;
-}
-
-.stat strong {
-  display: block;
-  font-size: 1.38rem;
-  line-height: 1.1;
-}
-
-.stat span {
-  display: block;
-  margin-top: 4px;
-  color: rgba(255,255,255,.68);
-  font-size: .86rem;
-}
-
-.portrait-zone {
-  position: relative;
-  min-height: 590px;
-  display: grid;
-  place-items: center;
-}
-
-.portrait-orbit {
-  position: absolute;
-  width: min(92%, 490px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    conic-gradient(from 140deg, rgba(231,183,76,.92), rgba(16,168,215,.85), rgba(255,255,255,.12), rgba(231,183,76,.92));
-  filter: drop-shadow(0 32px 70px rgba(0,0,0,.24));
-  animation: slowspin 18s linear infinite;
-}
-
-@keyframes slowspin {
-  to { transform: rotate(360deg); }
-}
-
-.portrait-card {
-  position: relative;
-  z-index: 2;
-  width: min(100%, 500px);
-  min-height: 565px;
-  display: grid;
-  place-items: end center;
-  padding-top: 18px;
-  border-radius: 44px;
-  background: linear-gradient(180deg, rgba(255,255,255,.20), rgba(255,255,255,.07));
-  border: 1px solid rgba(255,255,255,.20);
-  box-shadow: 0 28px 72px rgba(0,0,0,.25);
-  overflow: hidden;
-  backdrop-filter: blur(6px);
-}
-
-.portrait-card::before {
-  content: "";
-  position: absolute;
-  width: 76%;
-  aspect-ratio: 1;
-  border-radius: 38% 62% 48% 52% / 45% 42% 58% 55%;
-  background: linear-gradient(135deg, rgba(16,168,215,.70), rgba(231,183,76,.72));
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: morph 8s ease-in-out infinite;
-}
-
-@keyframes morph {
-  0%, 100% { border-radius: 38% 62% 48% 52% / 45% 42% 58% 55%; }
-  50% { border-radius: 55% 45% 42% 58% / 42% 58% 42% 58%; }
-}
-
-.portrait-card img {
-  position: relative;
-  z-index: 3;
-  width: min(92%, 430px);
-  max-height: 540px;
-  object-fit: contain;
-  object-position: bottom center;
-  filter: drop-shadow(0 26px 36px rgba(0,0,0,.31));
-}
-
-.story-note {
-  position: absolute;
-  z-index: 6;
-  left: 24px;
-  right: 24px;
-  bottom: 22px;
-  padding: 16px;
-  border-radius: 22px;
-  background: rgba(6,22,43,.82);
-  border: 1px solid rgba(255,255,255,.16);
-  backdrop-filter: blur(10px);
-}
-
-.story-note b {
-  display: block;
-  font-size: 1.05rem;
-  color: #fff;
-}
-
-.story-note span {
-  display: block;
-  margin-top: 2px;
-  color: rgba(255,255,255,.72);
-  font-size: .92rem;
-}
-
-section {
-  padding: 72px 0 0;
-}
-
-.head {
-  max-width: 940px;
-  margin-bottom: 28px;
-}
-
-.kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--blue);
-  font-size: .78rem;
-  font-weight: 950;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.kicker::before {
-  content: "";
-  width: 36px;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--gold), var(--sky));
-}
-
-h2 {
-  color: var(--navy);
-  font-size: clamp(1.9rem, 4.2vw, 3.04rem);
-  line-height: 1.13;
-  letter-spacing: -1.2px;
-}
-
-.desc {
-  color: var(--muted);
-  margin-top: 11px;
-  max-width: 820px;
-  font-size: 1.02rem;
-}
-
-.card {
-  background: rgba(255,255,255,.92);
-  border: 1px solid rgba(12,44,77,.08);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.profile-grid {
-  display: grid;
-  grid-template-columns: .86fr 1.14fr;
-  gap: 24px;
-}
-
-.identity {
-  position: relative;
-  overflow: hidden;
-  padding: 26px;
-  align-self: start;
-}
-
-.identity h3,
-.story-card h3,
-.cycle h3,
-.artifact h3,
-.reflect-card h3,
-.mission h3,
-.attach h3,
-.page-card h3 {
-  color: var(--navy);
-  font-size: 1.29rem;
-  margin-bottom: 14px;
-  line-height: 1.25;
-}
-
-.id-row {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 132px 1fr;
-  gap: 12px;
-  padding: 11px 0;
-  border-bottom: 1px dashed rgba(12,44,77,.14);
-}
-
-.id-row:last-child {
-  border-bottom: 0;
-}
-
-.id-row span {
-  color: var(--muted);
-  font-weight: 850;
-}
-
-.id-row b {
-  font-weight: 850;
-  color: var(--text);
-}
-
-.story-card,
-.page-card {
-  position: relative;
-  overflow: hidden;
-  padding: 32px;
-}
-
-.story-card p + p,
-.page-card p + p {
-  margin-top: 15px;
-}
-
-.quote {
-  position: relative;
-  z-index: 2;
-  margin-top: 22px;
-  padding: 22px;
-  border-radius: 24px;
-  color: #493510;
-  background: linear-gradient(135deg, rgba(231,183,76,.18), rgba(16,168,215,.10));
-  border-left: 6px solid var(--gold);
-  font-weight: 850;
-  font-style: italic;
-}
-
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.tag {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #eaf5ff;
-  color: var(--navy);
-  font-weight: 850;
-  font-size: .9rem;
-}
-
-.feature-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-bottom: 22px;
-}
-
-.feature {
-  padding: 18px;
-  border-radius: 24px;
-  background: rgba(255,255,255,.82);
-  border: 1px solid rgba(12,44,77,.08);
-  box-shadow: var(--shadow-soft);
-}
-
-.feature b {
-  display: block;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
-
-.feature span {
-  color: var(--muted);
-  font-size: .94rem;
-}
-
-.timeline {
-  position: relative;
-  display: grid;
-  gap: 24px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  bottom: 20px;
-  left: 28px;
-  width: 4px;
-  border-radius: 999px;
-  background: linear-gradient(var(--gold), var(--sky), var(--green));
-  opacity: .38;
-}
-
-.cycle {
-  position: relative;
-  overflow: hidden;
-  padding: 28px 28px 28px 96px;
-  transition: .24s ease;
-}
-
-.cycle:hover,
-.artifact:hover,
-a.file:hover,
-.menu-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 32px 92px rgba(6,22,43,.18);
-}
-
-.cycle::before {
-  content: attr(data-no);
-  position: absolute;
-  left: 0;
-  top: 26px;
-  width: 60px;
-  height: 60px;
-  display: grid;
-  place-items: center;
-  border-radius: 20px;
-  color: #fff;
-  font-weight: 950;
-  background: linear-gradient(135deg, var(--navy), var(--blue));
-  box-shadow: 0 16px 34px rgba(21,111,194,.24);
-}
-
-.label {
-  display: inline-flex;
-  padding: 8px 12px;
-  border-radius: 999px;
-  margin-bottom: 12px;
-  color: #7b5810;
-  font-weight: 950;
-  font-size: .88rem;
-  background: rgba(231,183,76,.16);
-}
-
-.meta {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 8px 18px;
-  margin: 14px 0 18px;
-  color: #44546b;
-}
-
-.meta b {
-  color: var(--navy);
-}
-
-ul.clean {
-  padding-left: 21px;
-  color: #3d4c63;
-  margin-top: 14px;
-}
-
-.clean li {
-  margin: 7px 0;
-}
-
-.link-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 16px;
-}
-
-.doc,
-.disabled {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 9px 13px;
-  border-radius: 12px;
-  font-weight: 900;
-  font-size: .88rem;
-  border: 1px solid rgba(12,44,77,.10);
-}
-
-.doc {
-  color: var(--blue);
-  background: linear-gradient(135deg, #ffffff, #ecf7ff);
-  transition: .2s ease;
-}
-
-.doc:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 14px 30px rgba(21,111,194,.15);
-}
-
-.disabled {
-  color: #91a0b4;
-  background: #f5f7fb;
-}
-
-.artifacts,
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.artifact,
-.menu-card {
-  position: relative;
-  overflow: hidden;
-  min-height: 245px;
-  padding: 24px;
-  transition: .24s ease;
-}
-
-.artifact::before,
-.menu-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto;
-  height: 6px;
-  background: linear-gradient(90deg, var(--gold), var(--sky), var(--green));
-  opacity: .9;
-}
-
-.icon {
-  width: 58px;
-  height: 58px;
-  display: grid;
-  place-items: center;
-  border-radius: 19px;
-  margin-bottom: 14px;
-  font-size: 1.55rem;
-  background: linear-gradient(135deg, #e9f6ff, #fff3d7);
-  box-shadow: 0 14px 34px rgba(21,111,194,.11);
-}
-
-.artifact p,
-.menu-card p {
-  color: var(--muted);
-}
-
-.analysis {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 24px;
-}
-
-.mini-list {
-  display: grid;
-  gap: 14px;
-}
-
-.mini {
-  padding: 18px;
-  border-radius: 23px;
-  background: rgba(255,255,255,.90);
-  border: 1px solid rgba(12,44,77,.08);
-  box-shadow: var(--shadow-soft);
-}
-
-.mini h4 {
-  color: var(--navy);
-  margin-bottom: 6px;
-}
-
-.mini p {
-  color: var(--muted);
-  font-size: .96rem;
-}
-
-.theory {
-  padding: 31px;
-  background:
-    radial-gradient(circle at 90% 10%, rgba(231,183,76,.18), transparent 28%),
-    linear-gradient(135deg, #ffffff, #f0f9ff);
-}
-
-.theory h3 {
-  color: var(--navy);
-  margin-bottom: 12px;
-  font-size: 1.34rem;
-}
-
-.theory p + p {
-  margin-top: 14px;
-}
-
-.reflection {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
-}
-
-.reflect-card {
-  position: relative;
-  overflow: hidden;
-  padding: 24px;
-  min-height: 212px;
-}
-
-.reflect-card:nth-child(1) { border-top: 5px solid var(--gold); }
-.reflect-card:nth-child(2) { border-top: 5px solid var(--sky); }
-.reflect-card:nth-child(3) { border-top: 5px solid var(--green); }
-.reflect-card:nth-child(4) { border-top: 5px solid var(--orange); }
-.reflect-card:nth-child(5) { border-top: 5px solid var(--blue); }
-.reflect-card:nth-child(6) { border-top: 5px solid #8b5cf6; }
-
-.reflect-card p {
-  color: #405066;
-}
-
-.model {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 22px;
-}
-
-.mission {
-  padding: 31px;
-  border-radius: var(--radius);
-  color: #fff;
-  background:
-    radial-gradient(circle at 88% 9%, rgba(231,183,76,.34), transparent 24%),
-    linear-gradient(135deg, #06162b, #156fc2);
-  box-shadow: var(--shadow);
-}
-
-.mission h3 {
-  color: #fff;
-}
-
-.mission p {
-  color: rgba(255,255,255,.84);
-}
-
-.competence {
-  display: grid;
-  gap: 14px;
-}
-
-.competence-item {
-  padding: 18px;
-  border-radius: 22px;
-  background: rgba(255,255,255,.91);
-  border: 1px solid rgba(12,44,77,.08);
-  box-shadow: var(--shadow-soft);
-}
-
-.competence-item b {
-  display: block;
-  color: var(--navy);
-  margin-bottom: 4px;
-}
-
-.philosophy {
-  position: relative;
-  overflow: hidden;
-  padding: 34px;
-}
-
-.philosophy::before {
-  content: "“";
-  position: absolute;
-  right: 26px;
-  top: -25px;
-  font-size: 9.4rem;
-  color: rgba(231,183,76,.18);
-  line-height: 1;
-  font-family: Georgia, serif;
-}
-
-.philosophy p {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 16px;
-}
-
-.attach {
-  padding: 28px;
-}
-
-.attach-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 14px;
-  margin-top: 18px;
-}
-
-.file {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 16px;
-  border-radius: 19px;
-  background: linear-gradient(135deg, #f9fcff, #fffaf0);
-  border: 1px solid rgba(12,44,77,.08);
-  transition: .22s ease;
-}
-
-.file b {
-  color: var(--navy);
-}
-
-.file small {
-  display: block;
-  margin-top: 2px;
-  color: var(--muted);
-}
-
-.file strong {
-  color: var(--blue);
-  white-space: nowrap;
-}
-
-.contact-area {
-  padding: 72px 0;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.05fr .95fr;
-  align-items: center;
-  gap: 24px;
-}
-
-.contact-card {
-  padding: 24px;
-  border-radius: 26px;
-  background: rgba(255,255,255,.92);
-  border: 1px solid rgba(12,44,77,.08);
-  box-shadow: var(--shadow);
-}
-
-.contact-row {
-  display: grid;
-  grid-template-columns: 96px 1fr;
-  gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(12,44,77,.11);
-}
-
-.contact-row:last-child {
-  border-bottom: none;
-}
-
-.contact-row span {
-  color: var(--muted);
-  font-weight: 850;
-}
-
-.contact-row b {
-  color: var(--navy);
-}
-
-.footer {
-  margin-top: 70px;
-  padding: 28px 0;
-  text-align: center;
-  color: rgba(255,255,255,.70);
-  background: linear-gradient(135deg, #06162b, #0d355a);
-}
-
-.back-top {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 75;
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  color: #231707;
-  font-weight: 950;
-  background: linear-gradient(135deg, var(--gold), #f5cc68);
-  box-shadow: 0 16px 34px rgba(6,22,43,.22);
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: .72s ease;
-}
-
-.reveal.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 980px) {
-  .nav {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .links {
-    justify-content: flex-start;
-  }
-
-  .home-grid,
-  .profile-grid,
-  .analysis,
-  .model,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .portrait-zone {
-    min-height: 492px;
-    order: -1;
-  }
-
-  .portrait-card {
-    min-height: 465px;
-  }
-
-  .hero-stats,
-  .feature-strip {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .artifacts,
-  .menu-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .reflection,
-  .attach-list {
-    grid-template-columns: 1fr;
-  }
-
-  .meta {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline::before {
-    display: none;
-  }
-
-  .cycle {
-    padding: 96px 26px 26px;
-  }
-
-  .cycle::before {
-    left: 26px;
-  }
-}
-
-@media (max-width: 620px) {
-  .wrap {
-    width: min(100% - 22px, 1180px);
-  }
-
-  .page-hero,
-  .home-hero {
-    padding: 46px 0 44px;
-    border-radius: 0 0 36px 36px;
-  }
-
-  .home-hero h1,
-  .page-hero h1 {
-    letter-spacing: -1.45px;
-  }
-
-  .hero-stats,
-  .feature-strip,
-  .artifacts,
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .portrait-zone {
-    min-height: 418px;
-  }
-
-  .portrait-card {
-    min-height: 395px;
-    border-radius: 32px;
-  }
-
-  .portrait-card img {
-    width: 96%;
-  }
-
-  .story-note {
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-  }
-
-  .brand-logo {
-    width: 31px;
-    height: 31px;
-  }
-
-  .brand-logos {
-    gap: 4px;
-    padding: 6px;
-  }
-
-  .id-row,
-  .contact-row {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-
-  .story-card,
-  .identity,
-  .theory,
-  .philosophy,
-  .attach,
-  .page-card {
-    padding: 22px;
-  }
-
-  .links a {
-    padding: 7px 9px;
-    font-size: .86rem;
-  }
-}
-
-
-/* === SATU INDEX: setiap menu tampil seperti halaman sendiri === */
-.page-section { display: none; }
-.page-section.active { display: block; }
-.links a.active { background: #eaf4ff; color: var(--navy); }
-.single-note {
-  margin-top: 14px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.18);
-  color: rgba(255,255,255,.78);
-  max-width: 780px;
-}
-@media print {
-  .topbar, .back-top { display: none !important; }
-  .page-section { display: block !important; page-break-after: always; }
-}
-
-  
-/* === SLIDESHOW FOTO KEGIATAN === */
-.gallery-card {
-  grid-column: 1 / -1;
-  min-height: auto;
-}
-
-.gallery-intro {
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-
-.gallery-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin: 14px 0 18px;
-}
-
-.gallery-tabs span {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: #eaf5ff;
-  color: var(--navy);
-  font-weight: 850;
-  font-size: .9rem;
-}
-
-.slideshow {
-  position: relative;
-  overflow: hidden;
-  border-radius: 26px;
-  background: linear-gradient(135deg, #f8fbff, #fff8e8);
-  border: 1px solid rgba(12,44,77,.08);
-  padding: 16px;
-}
-
-.slideshow::before,
-.slideshow::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 90px;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.slideshow::before {
-  left: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,.96), transparent);
-}
-
-.slideshow::after {
-  right: 0;
-  background: linear-gradient(270deg, rgba(255,255,255,.96), transparent);
-}
-
-.slide-track {
-  display: flex;
-  gap: 16px;
-  width: max-content;
-  animation: gallerySlide 90s linear infinite;
-}
-
-.slideshow:hover .slide-track {
-  animation-play-state: paused;
-}
-
-.slide-item {
-  position: relative;
-  flex: 0 0 330px;
-  height: 225px;
-  overflow: hidden;
-  border-radius: 22px;
-  background: #dbe7f2;
-  box-shadow: 0 14px 34px rgba(6,22,43,.12);
-}
-
-.slide-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: .35s ease;
-}
-
-.slide-item:hover img {
-  transform: scale(1.06);
-}
-
-.slide-caption {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  align-items: center;
-  padding: 9px 11px;
-  border-radius: 14px;
-  background: rgba(6,22,43,.76);
-  color: #fff;
-  backdrop-filter: blur(8px);
-  font-size: .84rem;
-  font-weight: 850;
-}
-
-.slide-caption small {
-  color: rgba(255,255,255,.72);
-  font-weight: 700;
-}
-
-@keyframes gallerySlide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.gallery-note {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: .92rem;
-}
-
-@media (max-width: 620px) {
-  .slide-item {
-    flex-basis: 265px;
-    height: 190px;
-  }
-  .slideshow::before,
-  .slideshow::after {
-    width: 38px;
-  }
-}
-
-  
-/* === TOMBOL LINK ARTEFAK === */
-.artifact-links-note {
-  color: var(--muted);
-  font-size: .92rem;
-  margin-top: 10px;
-}
-.link-row .doc {
-  cursor: pointer;
-}
-
-  
-/* === FOTO PERJALANAN PPL DI BERANDA === */
-.home-plp-showcase {
-  margin-bottom: 32px;
-}
-
-.home-plp-card {
-  position: relative;
-  overflow: hidden;
-  padding: 28px;
-  border-radius: var(--radius);
-  background:
-    radial-gradient(circle at 90% 10%, rgba(231,183,76,.15), transparent 28%),
-    linear-gradient(135deg, rgba(255,255,255,.95), rgba(241,249,255,.94));
-  border: 1px solid rgba(12,44,77,.08);
-  box-shadow: var(--shadow);
-}
-
-.home-plp-head {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px;
-  align-items: end;
-  margin-bottom: 18px;
-}
-
-.home-plp-head p {
-  color: var(--muted);
-  max-width: 760px;
-  margin-top: 8px;
-}
-
-.home-plp-badge {
-  display: inline-flex;
-  padding: 9px 13px;
-  border-radius: 999px;
-  background: rgba(231,183,76,.18);
-  color: #7b5810;
-  font-weight: 950;
-  font-size: .88rem;
-  white-space: nowrap;
-}
-
-.home-plp-slider {
-  position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  border-radius: 24px;
-  padding: 14px;
-  background: #ffffff;
-  border: 1px solid rgba(12,44,77,.08);
-}
-
-.home-plp-slider::before,
-.home-plp-slider::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 86px;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.home-plp-slider::before {
-  left: 0;
-  background: linear-gradient(90deg, #ffffff, transparent);
-}
-
-.home-plp-slider::after {
-  right: 0;
-  background: linear-gradient(270deg, #ffffff, transparent);
-}
-
-.home-plp-track {
-  display: flex;
-  gap: 14px;
-  width: max-content;
-  /* animation: homePlpSlide 70s linear infinite; */
-}
-
-.home-plp-slider:hover .home-plp-track {
-  animation-play-state: paused;
-}
-
-.home-plp-item {
-  position: relative;
-  flex: 0 0 310px;
-  height: 205px;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #dbe7f2;
-  box-shadow: 0 14px 30px rgba(6,22,43,.10);
-}
-
-.home-plp-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: .35s ease;
-}
-
-.home-plp-item:hover img {
-  transform: scale(1.06);
-}
-
-.home-plp-caption {
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: 12px;
-  padding: 9px 11px;
-  border-radius: 14px;
-  background: rgba(6,22,43,.76);
-  color: #fff;
-  backdrop-filter: blur(8px);
-  font-size: .84rem;
-  font-weight: 850;
-}
-
-.home-plp-note {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: .92rem;
-}
-
-@keyframes homePlpSlide {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@media (max-width: 980px) {
-  .home-plp-head {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 620px) {
-  .home-plp-card {
-    padding: 20px;
-  }
-
-  .home-plp-item {
-    flex-basis: 250px;
-    height: 176px;
-  }
-
-  .home-plp-slider::before,
-  .home-plp-slider::after {
-    width: 34px;
-  }
-}
-
-  
-/* === HILANGKAN KETERANGAN FOTO KENANGAN BERANDA === */
-.home-plp-caption {
-  display: none !important;
-}
-
-/* === SLIDESHOW KENANGAN HALUS + MANUAL === */
-.home-plp-slider {
-  position: relative;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  border-radius: 24px;
-  padding: 14px;
-  background: #ffffff;
-  border: 1px solid rgba(12,44,77,.08);
-  scrollbar-width: none;
-}
-
-.home-plp-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.home-plp-slider-wrapper {
-  position: relative;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
-  width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(6,22,43,.75);
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 12px 28px rgba(6,22,43,.25);
-}
-
-.slider-btn:hover {
-  background: rgba(21,111,194,.95);
-}
-
-.slider-btn.prev {
-  left: 12px;
-}
-
-.slider-btn.next {
-  right: 12px;
-}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Portofolio refleksi pengalaman belajar Semester I dan Semester II PPG Prajabatan PGSD Universitas Pattimura — Maruf Hamen.">
+  <meta name="theme-color" content="#0b2b4d">
+  <meta property="og:title" content="Portofolio Refleksi Semester I dan II | Maruf Hamen">
+  <meta property="og:description" content="Mendidik · Merefleksi · Bertumbuh — perjalanan belajar dua semester PPG Prajabatan.">
+  <meta property="og:type" content="website">
+  <title>Portofolio Refleksi Semester I dan II | Maruf Hamen, S.Pd</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body class="home-page">
+  <a class="skip-link" href="#main">Lewati ke konten</a>
 
-<!--
-CATATAN EDIT LINK ARTEFAK:
-Ganti href="https://drive.google.com/" pada tombol Media, LKPD/Hasil Kerja Murid, dan Asesmen dengan link Google Drive asli.
-Video sudah diisi:
-Siklus I  : https://drive.google.com/file/d/1mxGBXj_Ji9BllxBdFUUeH3zixnSk_qaLQ/view?usp=sharing
-Siklus II : https://drive.google.com/file/d/1mxGBXj_i9BllxBdFUUeH3zixnSk_qaLQ/view?usp=sharing
-Siklus III: https://drive.google.com/drive/folders/150fKB5B0_-TQKjHlHzXuL6st9YLtr5ul?usp=sharing
--->
-
-
-<!--
-CATATAN LINK ARTEFAK:
-Media Pembelajaran:
-Kartu Identitas = https://drive.google.com/file/d/1YaYGDAK4JtvLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-Diorama = https://drive.google.com/file/d/1YaYGDAK4JtvLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-Gallery Walk = https://drive.google.com/file/d/1YaYGK4DAJtvLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-Mystery Box = https://drive.google.com/file/d/1YaYGK4JtvDAFLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-
-LKPD dan Hasil Kerja Murid:
-Siklus I = https://drive.google.com/file/d/1YaYGK4Jt43vLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-Siklus II = https://drive.google.com/file/d/1YaYLK4JtvLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-Siklus III = https://drive.google.com/file/d/1YaYGD9K4JtvLNnxXl1fSmgcZGTjz3-V3RW/view?usp=sharing
-
-Asesmen dan Penilaian:
-Penilaian Formatif = https://drive.google.com/drive/folders/1NH-NwNVka0w7_OvI38qlq1a2EAxe0Y_E?usp=sharing
-Penilaian Sumatif = https://drive.google.com/drive/folders/1pmJgd2Mfn678Mr1_9X69YUgQ70BMhkwO?usp=sharing
--->
-
-
-<!--
-DOKUMEN LAMPIRAN YANG SUDAH DIMASUKKAN:
-Lampiran 7 = ./dokumen/lampiran-7.pdf
-Lampiran 8 = ./dokumen/lampiran-8.pdf
--->
-
-<body class="single-index">
-  <a class="back-top" href="#beranda" data-page-link="beranda" aria-label="Kembali ke atas">↑</a>
-
-  <header class="topbar">
+  <header class="topbar" id="topbar">
     <div class="wrap nav">
-      <a href="#beranda" class="brand" data-page-link="beranda">
-        <span class="brand-logos">
-          <img class="brand-logo" src="https://jasalogocepat.com/wp-content/uploads/2024/02/Logo-Dinas-Pendidikan-PNG-Transparan-Jasalogocepat.png" alt="Logo Tut Wuri Handayani">
-          <img class="brand-logo" src="https://bloguna.com/wp-content/uploads/2025/06/Logo-Universitas-Pattimura-UNPATTI-Format-PNG-SVG-EPS-1536x1459.png" alt="Logo Universitas Pattimura">
-          <img class="brand-logo" src="https://yt3.googleusercontent.com/ytc/AIdro_n0GHnieTS5AULTXSiEAuh4G_biq_iSJqPebrTYDaZDXA=s900-c-k-c0x00ffffff-no-rj" alt="Logo PPG Universitas Pattimura">
+      <a class="brand" href="index.html" aria-label="Kembali ke beranda">
+        <span class="brand-logos" aria-hidden="true">
+          <span class="logo-shell"><img src="https://jasalogocepat.com/wp-content/uploads/2024/02/Logo-Dinas-Pendidikan-PNG-Transparan-Jasalogocepat.png" alt="Logo Tut Wuri Handayani" onerror="this.parentElement.style.display='none'"></span>
+          <span class="logo-shell"><img src="https://yt3.googleusercontent.com/ytc/AIdro_n0GHnieTS5AULTXSiEAuh4G_biq_iSJqPebrTYDaZDXA=s900-c-k-c0x00ffffff-no-rj" alt="Logo PPG" onerror="this.parentElement.style.display='none'"></span>
+          <span class="logo-shell"><img src="https://download.bloguna.com/uploads/348939/Universitas-Pattimura.png" alt="Logo Universitas Pattimura" onerror="this.parentElement.style.display='none'"></span>
         </span>
-        <span class="brand-title">
-          E-Portfolio PPG
-          <small>Maruf Hamen · PGSD Universitas Pattimura</small>
-        </span>
+        <span class="brand-title">Portofolio Calon Guru Profesional<small>Maruf Hamen, S.Pd · PGSD Universitas Pattimura</small></span>
       </a>
 
-      <nav class="links" aria-label="Navigasi utama">
-<a href="#beranda" data-page-link="beranda" class="active">Beranda</a>
-<a href="#profil" data-page-link="profil" class="">Profil</a>
-<a href="#ppl" data-page-link="ppl" class="">PPL</a>
-<a href="#artefak" data-page-link="artefak" class="">Artefak</a>
-<a href="#analisis" data-page-link="analisis" class="">Analisis</a>
-<a href="#refleksi" data-page-link="refleksi" class="">Refleksi</a>
-<a href="#model-guru" data-page-link="model-guru" class="">Model Guru</a>
-<a href="#filosofi" data-page-link="filosofi" class="">Filosofi</a>
-<a href="#lampiran" data-page-link="lampiran" class="">Lampiran</a>
-<a href="#kontak" data-page-link="kontak" class="">Kontak</a>
-      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu"><span></span><span></span><span></span></button>
+      <nav class="links" id="navLinks" aria-label="Navigasi utama">
+        <a class="nav-home" href="index.html">Beranda</a><a href="ppl-terbimbing.html">PPL Terbimbing</a>
+        <a href="index.html#tentang">Tentang</a>
+        <div class="nav-dropdown" data-semester-menu="1">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="semesterMenu1">Semester I <span aria-hidden="true">⌄</span></button>
+          <div class="nav-dropdown-menu" id="semesterMenu1">
+            <a class="dropdown-overview" href="semester-1.html"><b>Semester I</b><small>Fondasi menjadi guru profesional</small></a>
+            <a href="semester-1.html#perjalanan-1">Perjalanan</a>
+            <a href="semester-1.html#refleksi-1">Refleksi 4C</a>
+            <a href="semester-1.html#artefak-1">Artefak</a>
+            <a href="semester-1.html#refleksi-akhir-1">Refleksi Akhir</a>
+          </div>
+        </div>
+        <div class="nav-dropdown" data-semester-menu="2">
+          <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="semesterMenu2">Semester II <span aria-hidden="true">⌄</span></button>
+          <div class="nav-dropdown-menu" id="semesterMenu2">
+            <a class="dropdown-overview" href="semester-2.html"><b>Semester II</b><small>Memperdalam dan menguatkan praktik</small></a>
+            <a href="semester-2.html#perjalanan-2">Perjalanan</a>
+            <a href="semester-2.html#refleksi-2">Refleksi 4C</a>
+            <a href="semester-2.html#artefak-2">Artefak</a>
+            <a href="semester-2.html#refleksi-akhir-2">Refleksi Akhir</a>
+          </div>
+        </div>
+      <a class="nav-lk3" href="refleksi-ppg.html">Refleksi Akhir PPG</a>
+        <a class="nav-inovasi" href="karya-inovasi.html">Karya Inovasi · LK 4</a>
+</nav>
     </div>
   </header>
 
-<section id="beranda" class="page-section active">
-<main class="page-hero home-hero">
-  <div class="wrap home-grid">
-    <div class="reveal">
-      <div class="badge-row">
-        <span class="badge"><span class="dot"></span> PPG Prajabatan</span>
-        <span class="badge"><span class="dot"></span> PPL Terbimbing</span>
-        <span class="badge"><span class="dot"></span> SD Negeri 70 Ambon</span>
+  <main id="main">
+    <section id="beranda" class="image-home-hero" aria-labelledby="homeTitle">
+      <h1 id="homeTitle" class="sr-only">Portofolio Refleksi Perjalanan Belajar Menuju Guru Profesional</h1>
+      <div class="home-artboard">
+        <img class="home-artboard-image" src="assets/images/home/beranda-background.jpg" alt="Portofolio Refleksi Perjalanan Belajar Menuju Guru Profesional dengan dokumentasi kegiatan pendidikan dan refleksi Semester I dan II">
+        <div class="home-copy-patch home-semester-patch"><b>SEMINAR PPG · SEMESTER I &amp; II</b><span>PPG PRAJABATAN 2026</span></div>
+        <p class="home-copy-patch home-summary-patch">Website ini mendokumentasikan sebelas pengalaman belajar dari dua semester, perubahan cara pandang, serta artefak nyata yang menunjukkan proses saya bertumbuh sebagai calon guru profesional.</p>
+        <a class="home-image-button reflection-button home-text-button" href="semester-1.html" aria-label="Buka Semester I"><span>📘 Semester I</span></a>
+        <a class="home-image-button artifact-button home-text-button alt" href="semester-2.html" aria-label="Buka Semester II"><span>📗 Semester II</span></a>
       </div>
-      <h1>Menjadi Guru,<br><span>Menuntun Murid Tumbuh dengan Hati dan Makna.</span></h1>
-      <p class="home-lead">
-        Website ini merupakan E-Portfolio PPG Prajabatan yang memuat perjalanan reflektif saya selama PPL Terbimbing.
-        Di dalamnya terdapat profil, artefak pembelajaran, analisis perangkat, refleksi akhir, filosofi mengajar,
-        serta model guru profesional yang ingin saya bangun.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#profil" data-page-link="profil">Mulai Membaca</a>
-        <a class="btn btn-ghost" href="#artefak" data-page-link="artefak">Lihat Artefak</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><strong>3</strong><span>Siklus PPL</span></div>
-        <div class="stat"><strong>3</strong><span>Model Belajar</span></div>
-        <div class="stat"><strong>9+</strong><span>Artefak</span></div>
-        <div class="stat"><strong>1</strong><span>Sekolah Mitra</span></div>
-      </div>
-    </div>
+    </section>
 
-    <div class="portrait-zone reveal">
-      <div class="portrait-orbit"></div>
-      <div class="portrait-card">
-        <img src="./foto-profil.png" alt="Foto profil Maruf Hamen">
-        <div class="story-note">
-          <b>Maruf Hamen</b>
-          <span>NIM: 2025492661 · Calon Guru Profesional</span>
+    <section id="pilih-semester" class="chapter-preview section semester-overview">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <span class="section-kicker centered">Satu Portofolio · Dua Semester</span>
+          <h2>Pilih perjalanan belajar yang ingin dibaca</h2>
         </div>
-      </div>
-    </div>
-  </div>
-</main>
-
-<section>
-  <div class="wrap">
-
-    <div class="home-plp-showcase reveal">
-      <div class="home-plp-card">
-        <div class="home-plp-head">
-          <div>
-            <div class="kicker">Kenangan Sekolah</div>
-            <h2>Kenangan Saya di SD Negeri 70 Ambon</h2>
-            <p>
-              Dokumentasi ini memuat beberapa momen kebersamaan saya selama berada di SD Negeri 70 Ambon, 
-              mulai dari kegiatan sekolah, interaksi dengan guru, suasana lingkungan sekolah, hingga kenangan bersama rekan PPL.
-            </p>
-          </div>
-          <span class="home-plp-badge">SD Negeri 70 Ambon</span>
-        </div>
-        <div class="home-plp-slider-wrapper">
-          <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-        <div class="home-plp-slider" aria-label="Foto kenangan di SD Negeri 70 Ambon">
-          <div class="home-plp-track">
-            <div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-01.jpg" alt="Kenangan bersama warga sekolah">
-  <div class="home-plp-caption">Kenangan bersama warga sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-02.jpg" alt="Momen kebersamaan di SD Negeri 70 Ambon">
-  <div class="home-plp-caption">Momen kebersamaan di SD Negeri 70 Ambon</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-03.jpg" alt="Foto bersama di lingkungan sekolah">
-  <div class="home-plp-caption">Foto bersama di lingkungan sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-04.jpg" alt="Kegiatan piket dan pembiasaan sekolah">
-  <div class="home-plp-caption">Kegiatan piket dan pembiasaan sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-05.jpg" alt="Kenangan di halaman sekolah">
-  <div class="home-plp-caption">Kenangan di halaman sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-06.jpg" alt="Momen pribadi di SD Negeri 70 Ambon">
-  <div class="home-plp-caption">Momen pribadi di SD Negeri 70 Ambon</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-07.jpg" alt="Kenangan di ruang sekolah">
-  <div class="home-plp-caption">Kenangan di ruang sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-08.jpg" alt="Persiapan media pembelajaran">
-  <div class="home-plp-caption">Persiapan media pembelajaran</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-09.jpg" alt="Foto bersama Guru Pamong dan rekan PPL">
-  <div class="home-plp-caption">Foto bersama Guru Pamong dan rekan PPL</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-10.jpg" alt="Kebersamaan dengan keluarga besar sekolah">
-  <div class="home-plp-caption">Kebersamaan dengan keluarga besar sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-11.jpg" alt="kepala sekolah dan rekan plp">
-  <div class="home-plp-caption">kepala sekolah dan rekan plp</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-12.jpg" alt="bukber">
-  <div class="home-plp-caption">bukber</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-13.jpg" alt="rekan">
-  <div class="home-plp-caption">rekan</div>
-</div>
-
-            <div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-01.jpg" alt="Kenangan bersama warga sekolah">
-  <div class="home-plp-caption">Kenangan bersama warga sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-02.jpg" alt="Momen kebersamaan di SD Negeri 70 Ambon">
-  <div class="home-plp-caption">Momen kebersamaan di SD Negeri 70 Ambon</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-03.jpg" alt="Foto bersama di lingkungan sekolah">
-  <div class="home-plp-caption">Foto bersama di lingkungan sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-04.jpg" alt="Kegiatan piket dan pembiasaan sekolah">
-  <div class="home-plp-caption">Kegiatan piket dan pembiasaan sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-05.jpg" alt="Kenangan di halaman sekolah">
-  <div class="home-plp-caption">Kenangan di halaman sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-06.jpg" alt="Momen pribadi di SD Negeri 70 Ambon">
-  <div class="home-plp-caption">Momen pribadi di SD Negeri 70 Ambon</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-07.jpg" alt="Kenangan di ruang sekolah">
-  <div class="home-plp-caption">Kenangan di ruang sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-08.jpg" alt="Persiapan media pembelajaran">
-  <div class="home-plp-caption">Persiapan media pembelajaran</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-09.jpg" alt="Foto bersama Guru Pamong dan rekan PPL">
-  <div class="home-plp-caption">Foto bersama Guru Pamong dan rekan PPL</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-10.jpg" alt="Kebersamaan dengan keluarga besar sekolah">
-  <div class="home-plp-caption">Kebersamaan dengan keluarga besar sekolah</div>
-</div>
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-11.jpg" alt="kepala sekolah dan rekan plp">
-  <div class="home-plp-caption">kepala sekolah dan rekan plp</div>
-</div>
-
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-12.jpg" alt="bukber">
-  <div class="home-plp-caption">bukber</div>
-</div>
-
-<div class="home-plp-item">
-  <img src="./kenangan/kenangan-sdn70-13.jpg" alt="rekan">
-  <div class="home-plp-caption">rekan</div>
-</div>
-
-          </div>
-        </div>
-        <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
-</div>
-        <p class="home-plp-note">Foto kenangan bergerak otomatis. Arahkan kursor ke foto untuk menghentikan sementara.</p>
-      </div>
-    </div>
-
-        
-
-    <div class="head reveal">
-      <div class="kicker">Navigasi Portfolio</div>
-      <h2>Menu Navigasi.</h2>
-      <p class="desc">Pilih bagian yang ingin dibaca.</p>
-    </div>
-
-    <div class="menu-grid">
-      <a class="menu-card card reveal" href="#profil" data-page-link="profil"><div class="icon">👤</div><h3>Profil Mahasiswa</h3><p>Identitas, daerah asal, inspirasi menjadi guru, tujuan profesional, dan motto pribadi.</p></a>
-      <a class="menu-card card reveal" href="#ppl" data-page-link="ppl"><div class="icon">🧭</div><h3>PPL Terbimbing</h3><p>Perjalanan praktik mengajar dalam tiga siklus pembelajaran.</p></a>
-      <a class="menu-card card reveal" href="#artefak" data-page-link="artefak"><div class="icon">📦</div><h3>Artefak</h3><p>RPP/modul ajar, media, LKPD, hasil kerja murid, penilaian, video, dan foto kegiatan.</p></a>
-      <a class="menu-card card reveal" href="#analisis" data-page-link="analisis"><div class="icon">🔎</div><h3>Analisis Artefak</h3><p>Konteks, tujuan, kelebihan, kekurangan, teori pedagogi, dan rencana perbaikan.</p></a>
-      <a class="menu-card card reveal" href="#refleksi" data-page-link="refleksi"><div class="icon">🪞</div><h3>Refleksi Akhir</h3><p>Pembelajaran selama PPL, tantangan, solusi, umpan balik, dan tindak lanjut.</p></a>
-      <a class="menu-card card reveal" href="#filosofi" data-page-link="filosofi"><div class="icon">🌱</div><h3>Filosofi Mengajar</h3><p>Prinsip, keyakinan, dan nilai yang mendasari praktik mengajar.</p></a>
-    </div>
-  </div>
-</section>
-</section>
-
-<section id="profil" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Profil <span>Mahasiswa</span></h1>
-    <p>Kisah, identitas, asal daerah, inspirasi menjadi guru, dan tujuan profesional.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="profile-grid">
-  <aside class="identity card reveal">
-    <h3>Identitas Singkat</h3>
-    <div class="id-row"><span>Nama</span><b>Maruf Hamen</b></div>
-    <div class="id-row"><span>NIM</span><b>2025492661</b></div>
-    <div class="id-row"><span>Program Studi</span><b>Pendidikan Guru Sekolah Dasar</b></div>
-    <div class="id-row"><span>LPTK</span><b>Universitas Pattimura</b></div>
-    <div class="id-row"><span>Asal Daerah</span><b>Pulau Rhun, Kec. Banda, Kab. Maluku Tengah, Prov. Maluku</b></div>
-    <div class="id-row"><span>Tempat PPL</span><b>SD Negeri 70 Ambon</b></div>
-    <div class="id-row"><span>Guru Pamong</span><b>Fitriah Djibran, S.Pd, M.Pd</b></div>
-    <div class="id-row"><span>DPL</span><b>Dr. J. Takaria, S.Pd, M.Si</b></div>
-  </aside>
-
-  <article class="story-card card reveal">
-    <h3>Tentang Saya</h3>
-    <p>
-      Nama saya <strong>Maruf Hamen</strong>, mahasiswa Pendidikan Profesi Guru Prajabatan Program Studi Pendidikan Guru Sekolah Dasar, Universitas Pattimura. Saya berasal dari <strong>Pulau Rhun, Kecamatan Banda, Kabupaten Maluku Tengah, Provinsi Maluku</strong>. Pulau Rhun adalah pulau kecil di Kepulauan Banda yang memiliki cerita besar dalam sejarah perdagangan rempah dunia.
-    </p>
-    <p>
-      Meskipun kecil secara wilayah, Pulau Rhun menyimpan nilai sejarah, keindahan laut, budaya masyarakat kepulauan, serta rasa persaudaraan yang kuat. Keunikan ini membentuk cara pandang saya bahwa dari tempat yang sederhana, seseorang tetap dapat membawa cerita, harapan, dan cita-cita yang besar.
-    </p>
-    <p>
-      Inspirasi saya untuk menjadi guru lahir dari pemikiran Ki Hadjar Dewantara dan Nelson Mandela. Dari Ki Hadjar Dewantara, saya belajar bahwa guru bukan hanya bertugas menyampaikan materi, tetapi juga menjadi teladan, membangun semangat, dan memberikan dorongan kepada murid. Sementara itu, Nelson Mandela mengajarkan bahwa pendidikan merupakan kekuatan besar untuk mengubah kehidupan manusia.
-    </p>
-    <p>
-      Tujuan saya menjadi guru profesional adalah menjadi pendidik yang mampu mengajar dengan baik, memahami kebutuhan murid, dan menciptakan pembelajaran yang menyenangkan serta bermakna. Saya ingin menjadi guru yang tidak hanya menyampaikan materi, tetapi juga ikut membentuk karakter, menumbuhkan rasa percaya diri, dan membantu murid mengenal potensi dirinya.
-    </p>
-    <div class="quote">
-      “Dari pulau kecil, saya belajar bahwa mimpi besar dapat tumbuh di mana saja, dan melalui pendidikan saya ingin menyalakan harapan bagi generasi berikutnya.”
-    </div>
-    <div class="tag-row">
-      <span class="tag">Teladan</span>
-      <span class="tag">Reflektif</span>
-      <span class="tag">Peduli Murid</span>
-      <span class="tag">Cinta Budaya Lokal</span>
-      <span class="tag">Pembelajaran Bermakna</span>
-    </div>
-  </article>
-</div>
-
-  </div>
-</section>
-</section>
-
-<section id="ppl" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>PPL <span>Terbimbing</span></h1>
-    <p>Perjalanan praktik mengajar dalam tiga siklus, mulai dari merancang, melaksanakan, sampai merefleksikan pembelajaran.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="feature-strip">
-  <div class="feature reveal"><b>Merancang</b><span>Menyusun modul ajar, tujuan, media, LKPD, dan asesmen.</span></div>
-  <div class="feature reveal"><b>Melaksanakan</b><span>Mengajar melalui pengalaman, masalah nyata, dan konteks budaya.</span></div>
-  <div class="feature reveal"><b>Merefleksikan</b><span>Mengolah umpan balik untuk memperbaiki praktik berikutnya.</span></div>
-</div>
-
-<div class="timeline">
-  <article class="cycle card reveal" data-no="01">
-    <span class="label">Siklus I · Mengenal Diri</span>
-    <h3>Identitas Diri dan Keberagaman</h3>
-    <div class="meta">
-      <p><b>Kelas:</b> I / Genap</p>
-      <p><b>Mata Pelajaran:</b> Pendidikan Pancasila</p>
-      <p><b>Materi:</b> Identitas Diri dan Keberagaman</p>
-      <p><b>Model:</b> Experiential Learning</p>
-      <p><b>Pendekatan:</b> Pembelajaran Mendalam / Deep Learning</p>
-    </div>
-    <p>Pembelajaran diarahkan agar murid mampu mengidentifikasi dan menceritakan perbedaan fisik maupun nonfisik dengan teman di lingkungan rumah dan sekolah. Kegiatan belajar dibuat konkret melalui lagu, gambar, tanya jawab, pengamatan teman, LKPD, dan presentasi sederhana.</p>
-    <ul class="clean">
-      <li><b>Tujuan:</b> murid mengenal identitas diri dan menghargai keberagaman.</li>
-      <li><b>Media:</b> gambar orang berkenalan, lagu “Dua Mata Saya”, video pembelajaran, dan LKPD identitas diri.</li>
-      <li><b>Kegiatan inti:</b> mengalami, mengamati, merefleksi, mengonseptualisasi, dan menyimpulkan.</li>
-      <li><b>Artefak:</b> modul ajar, LKPD, media pembelajaran, hasil kerja murid, dokumentasi, dan penilaian Guru Pamong.</li>
-    </ul>
-    <div class="link-row"><a class="doc" href="./dokumen/modul-ajar-siklus-1.pdf" target="_blank">Unduh Modul Siklus I</a></div>
-  </article>
-
-  <article class="cycle card reveal" data-no="02">
-    <span class="label">Siklus II · Belajar Nilai</span>
-    <h3>Pengamalan Pancasila dalam Kehidupan Masyarakat</h3>
-    <div class="meta">
-      <p><b>Kelas:</b> IV / Genap</p>
-      <p><b>Mata Pelajaran:</b> Pendidikan Pancasila</p>
-      <p><b>Materi:</b> Sikap dan Perilaku yang Mencerminkan Nilai Pancasila</p>
-      <p><b>Model:</b> Problem Based Learning</p>
-      <p><b>Pendekatan:</b> Pembelajaran Mendalam / Deep Learning</p>
-    </div>
-    <p>Murid diajak memahami nilai Pancasila melalui masalah nyata dalam kehidupan masyarakat. Media diorama dan gambar perilaku bullying digunakan untuk membantu murid membedakan perilaku yang sesuai dan tidak sesuai dengan nilai Pancasila.</p>
-    <ul class="clean">
-      <li><b>Tujuan:</b> murid mengidentifikasi, menganalisis, menjelaskan, dan menyajikan solusi berdasarkan nilai Pancasila.</li>
-      <li><b>Media:</b> diorama kehidupan masyarakat, gambar kasus sosial, LKPD “Tim Detektif Moral”, dan soal evaluasi.</li>
-      <li><b>Kegiatan inti:</b> orientasi masalah, investigasi kelompok, presentasi, evaluasi, dan refleksi.</li>
-      <li><b>Artefak:</b> modul ajar, diorama, LKPD analisis kasus, Penilaian formatif, penilaian sumatif, dan dokumentasi praktik.</li>
-    </ul>
-    <div class="link-row"><a class="doc" href="./dokumen/modul-ajar-siklus-2.pdf" target="_blank">Unduh Modul Siklus II</a></div>
-  </article>
-
-  <article class="cycle card reveal" data-no="03">
-    <span class="label">Siklus III · Belajar dari Budaya</span>
-    <h3>Tradisi Keluarga dan Budaya Maluku</h3>
-    <div class="meta">
-      <p><b>Kelas:</b> III / Genap</p>
-      <p><b>Mata Pelajaran:</b> IPAS</p>
-      <p><b>Materi:</b> Tradisi Keluarga dan Masyarakat Sekitar</p>
-      <p><b>Model:</b> Contextual Teaching and Learning</p>
-      <p><b>Pendekatan:</b> Pembelajaran Mendalam / Deep Learning</p>
-    </div>
-    <p>Pembelajaran mengaitkan materi dengan pengalaman murid dan budaya lokal Maluku. Murid belajar mengenal tradisi Sasi, Makan Patita, Cuci Negeri Soya, Timba Laor, Tari Cakalele, Tari Lenso, Pukul Sapu Lidi, dan Bambu Gila melalui Gallery Walk dan Mystery Box Challenge.</p>
-    <ul class="clean">
-      <li><b>Tujuan:</b> murid mengenal tradisi Maluku, menjelaskan nilai baik, serta menunjukkan sikap menghargai budaya.</li>
-      <li><b>Media:</b> poster budaya, kartu tantangan, Mystery Box, gambar, video, dan LKPD kelompok.</li>
-      <li><b>Kegiatan inti:</b> membangun pengetahuan awal, Gallery Walk, Mystery Box, mengomunikasikan hasil, refleksi, dan evaluasi.</li>
-      <li><b>Artefak:</b> modul ajar, media Gallery Walk, kartu tantangan, LKPD, rubrik penilaian, hasil kerja murid, foto, dan video praktik.</li>
-    </ul>
-    <div class="link-row"><a class="doc" href="./dokumen/modul-ajar-siklus-3.pdf" target="_blank">Unduh Modul Siklus III</a></div>
-  </article>
-</div>
-
-  </div>
-</section>
-</section>
-
-<section id="artefak" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Artefak <span>Pembelajaran</span></h1>
-    <p>Bukti rencana dan perangkat pembelajaran yang digunakan selama PPL Terbimbing.</p>
-  </div>
-</main>
-
-<section>
-  <div class="wrap">
-    <div class="artifacts">
-      <article class="artifact card reveal">
-        <div class="icon">📘</div>
-        <h3>RPP / Modul Ajar</h3>
-        <p>Modul ajar memuat informasi umum, identifikasi murid, capaian pembelajaran, tujuan, model, kegiatan, asesmen, sumber belajar, dan lampiran.</p>
-        <div class="link-row">
-          <a class="doc" href="./dokumen/modul-ajar-siklus-1.pdf" target="_blank">Siklus I</a>
-          <a class="doc" href="./dokumen/modul-ajar-siklus-2.pdf" target="_blank">Siklus II</a>
-          <a class="doc" href="./dokumen/modul-ajar-siklus-3.pdf" target="_blank">Siklus III</a>
-        </div>
-      </article>
-
-      <article class="artifact card reveal">
-        <div class="icon">🎨</div>
-        <h3>Media Pembelajaran</h3>
-        <p>Media disesuaikan dengan karakteristik murid, seperti kartu identitas diri, video, diorama, poster budaya Maluku, Gallery Walk, Mystery Box, dan kartu tantangan.</p>
-        <div class="link-row">
-          <a class="doc" href="https://drive.google.com/file/d/1gSmuFa_Y5efyPFLocu63Ly-VNpFSJjev/view?usp=sharing" target="_blank">Kartu Identitas</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1LJWrAo0yEBtFCGEiL4WBrTbuQICXKnG7?usp=drive_link" target="_blank">Diorama</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1k6-Uka6Y-zmH7AzTREnBfqFjNXBn5HiS?usp=sharing" target="_blank">Gallery Walk</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1W-z5feudy9MMGuGRR69I-oWpH8ntZAKl?usp=sharing" target="_blank">Mystery Box</a>
-        </div>
-      </article>
-
-      <article class="artifact card reveal">
-        <div class="icon">📝</div>
-        <h3>LKPD dan Hasil Kerja Murid</h3>
-        <p>LKPD membantu murid mengamati, berdiskusi, menuliskan jawaban, menghubungkan materi dengan pengalaman, dan menyampaikan hasil belajar.</p>
-        <div class="link-row">
-          <a class="doc" href="https://drive.google.com/file/d/1cU0WcQDh_uGi0bGjWl_K47uj62LUBcJ_/view?usp=drive_link" target="_blank">Siklus I</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1iFF4dExzrJUKq03n7Swu21nouPK3HY32?usp=sharing" target="_blank">Siklus II</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1ftuQl2tddALRSntYgVV8_Cju0tJjuRjI?usp=drive_link" target="_blank">Siklus III</a>
-        </div>
-      </article>
-
-      <article class="artifact card reveal">
-        <div class="icon">✅</div>
-        <h3>Asesmen dan Penilaian</h3>
-        <p>Asesmen dilakukan melalui observasi, kinerja, rubrik diskusi, LKPD, presentasi, refleksi, dan tes evaluasi untuk melihat perkembangan murid.</p>
-        <div class="link-row">
-          <a class="doc" href="https://drive.google.com/drive/folders/1NH-NwNVka0w7_OvI38qlq1a2EAxe0Y_E?usp=sharing" target="_blank">Penilaian Formatif</a>
-          <a class="doc" href="https://drive.google.com/drive/folders/1pmJgd2Mfn678Mr1_9X69YUgQ70BMhkwO?usp=sharing" target="_blank">Penilaian Sumatif</a>
-        </div>
-      </article>
-
-      <article class="artifact card reveal">
-        <div class="icon">🎥</div>
-        <h3>Video Praktik Mengajar</h3>
-        <p>Video praktik mengajar menjadi bukti pelaksanaan pembelajaran dan bahan refleksi terhadap pembukaan, kegiatan inti, media, pengelolaan kelas, dan penutupan.</p>
-        <div class="link-row">
-          <a class="doc" href="https://drive.google.com/file/d/1mxGBXj_Ji9BllxBdFUUeH3zixnSk_qaLQ/view?usp=sharing" target="_blank">Video Siklus I</a>
-          <a class="doc" href="https://drive.google.com/file/d/1lpE6MVmiAefqMcD6pItpo-UrYdu4tzGw/view?usp=sharing" target="_blank">Video Siklus II</a>
-          <a class="doc" href="https://drive.google.com/file/d/1KQ_I7YsDMsAbGQMpd2IK0S4TULvnMANN/view?usp=drive_link" target="_blank">Video Siklus III</a>
-        </div>
-      </article>
-
-      <article class="artifact gallery-card card reveal">
-            <div class="icon">📷</div>
-            <h3>Foto Kegiatan</h3>
-            <p class="gallery-intro">
-              Dokumentasi foto kegiatan PPL Terbimbing dari Siklus I, Siklus II, dan Siklus III. 
-              Galeri ini bergerak otomatis dan dapat berhenti sementara saat diarahkan dengan kursor.
-            </p>
-            <div class="gallery-tabs">
-              <span>Siklus I</span>
-              <span>Siklus II</span>
-              <span>Siklus III</span>
-            </div>
-            <div class="slideshow" aria-label="Slideshow foto kegiatan PPL Terbimbing">
-              <div class="slide-track">
-                <div class="slide-item">
-      <img src="./galeri/siklusi-01.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-02.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-03.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-04.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-05.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-06.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-07.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-08.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-09.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-01.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-02.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-03.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-04.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-05.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-06.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-07.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-01.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-02.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-03.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-04.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-05.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-06.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-07.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-08.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-09.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-10.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-11.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-12.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-13.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-14.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-01.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-02.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-03.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-04.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-05.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-06.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-07.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-08.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusi-09.jpg" alt="Dokumentasi Siklus I">
-      <div class="slide-caption"><span>Siklus I</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-01.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-02.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-03.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-04.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-05.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-06.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusii-07.jpg" alt="Dokumentasi Siklus II">
-      <div class="slide-caption"><span>Siklus II</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-01.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-02.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-03.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-04.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-05.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-06.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-07.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-08.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-09.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-10.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-11.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-12.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-13.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-<div class="slide-item">
-      <img src="./galeri/siklusiii-14.jpg" alt="Dokumentasi Siklus III">
-      <div class="slide-caption"><span>Siklus III</span><small>Foto kegiatan</small></div>
-    </div>
-              </div>
-            </div>
-            <p class="gallery-note">Geser otomatis secara terus-menerus. Arahkan kursor ke foto untuk menghentikan sementara.</p>
+        <div class="semester-choice-grid">
+          <article class="semester-choice-card semester-one reveal">
+            <div><span>SEMESTER I</span><strong>6</strong><small>mata kuliah</small></div>
+            <h3>Fondasi Menjadi Guru Profesional</h3>
+            <p>Memaknai pendidikan, memahami murid, merancang pembelajaran, dan menguji teori melalui praktik.</p>
+            <a class="semester-open" href="semester-1.html">Buka Halaman Semester I <b>→</b></a>
           </article>
+          <article class="semester-choice-card semester-two reveal" data-delay="100">
+            <div><span>SEMESTER II</span><strong>5</strong><small>mata kuliah</small></div>
+            <h3>Memperdalam dan Menguatkan Praktik</h3>
+            <p>Mengembangkan kompetensi sosial emosional, asesmen, PPL mandiri, kepemimpinan, dan pendidikan kepulauan.</p>
+            <a class="semester-open" href="semester-2.html">Buka Halaman Semester II <b>→</b></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ppg-home-promo" id="refleksi-program-ppg" aria-label="Refleksi keseluruhan PPG"><div class="wrap"><div class="ppg-home-promo-inner reveal"><div class="ppg-promo-emblem" aria-hidden="true"><img src="assets/emblems/professional-teacher.svg" alt="" /></div><div class="ppg-promo-copy"><span class="ppg-promo-kicker">LK 3 · Refleksi Program PPG</span><h2>Perjalanan dua semester, satu komitmen menjadi guru profesional.</h2><p>Refleksi menyeluruh tentang arah pendidikan Indonesia, langkah menjadi guru profesional, dan tiga rencana tindak lanjut setelah PPG.</p></div><a class="btn btn-primary ppg-promo-button" href="refleksi-ppg.html">Baca Refleksi Akhir PPG <span aria-hidden="true">→</span></a></div></div></section>
+<section class="innovation-home-promo" id="karya-inovasi" aria-label="Karya inovasi PANCING EDU">
+  <div class="wrap innovation-home-card reveal">
+    <div class="innovation-home-visual" aria-hidden="true"><img class="innovation-home-fish" src="assets/images/inovasi/F01.png" alt=""><span class="innovation-home-mark">LK 4 · TAHAP 5</span></div>
+    <div class="innovation-home-copy">
+      <span class="section-kicker">SEMINAR PPG · PENYUSUNAN KARYA INOVASI</span>
+      <h2>Dari refleksi pembelajaran menuju <span>PANCING EDU.</span></h2>
+      <p>Menindaklanjuti pengalaman PPL Mandiri Siklus IV melalui media pancing fisik dan rancangan pembelajaran digital berbasis QR, bacaan visual, kuis, serta refleksi perasaan murid.</p>
+      <div class="innovation-home-actions"><a class="btn btn-primary" href="karya-inovasi.html">Jelajahi Karya Inovasi <span aria-hidden="true">→</span></a><a class="btn btn-ghost" href="documents/karya-inovasi/LK-4-PANCING-EDU.pdf" target="_blank" rel="noopener">Baca LK 4 (PDF) ↗</a></div>
     </div>
   </div>
 </section>
-</section>
+<section class="education-strip">
+      <div class="wrap education-strip-grid">
+        <blockquote class="strip-quote reveal">
+          <p>Pendidikan bukan hanya tentang apa yang diajarkan, tetapi tentang siapa yang dibentuk.</p>
+          <footer>— Maruf Hamen, S.Pd</footer>
+        </blockquote>
+        <div class="strip-values reveal" data-delay="80">
+          <div><b>Belajar</b><span>Sepanjang Hayat</span></div>
+          <div><b>Berpihak</b><span>pada Murid</span></div>
+          <div><b>Kolaboratif</b><span>dan Adaptif</span></div>
+          <div><b>Berkontribusi</b><span>untuk Masa Depan</span></div>
+        </div>
+      </div>
+    </section>
 
-<section id="analisis" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Analisis <span>Artefak</span></h1>
-    <p>Analisis mendalam terhadap konteks, tujuan, kelebihan, kekurangan, teori pedagogi, dan perbaikan artefak.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="analysis">
-  <div class="mini-list">
-    <div class="mini reveal">
-      <h4>Konteks dan Tujuan</h4>
-      <p>Artefak disusun berdasarkan kebutuhan belajar murid pada setiap siklus. Siklus I menekankan pengalaman langsung, Siklus II pemecahan masalah, dan Siklus III keterkaitan materi dengan budaya lokal.</p>
+    <section id="tentang" class="section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="section-kicker">Tentang Portofolio</span><h2>Refleksi yang menunjukkan <span>perjalanan, bukan sekadar tugas.</span></h2></div><p></p></div>
+
+        <div class="profile-grid">
+          <article class="profile-card card reveal">
+            <div class="profile-photo"><img src="assets/images/profile/foto-profil.png" alt="Foto profil Maruf Hamen"></div>
+            <div class="profile-copy"><span class="profile-badge">Calon Guru Profesional</span><h3>Maruf Hamen</h3><p>PPG Prajabatan · Pendidikan Guru Sekolah Dasar · Universitas Pattimura</p><div class="mini-tags"><span>Berpihak pada Murid</span><span>Reflektif</span><span>Adaptif</span><span>Pembelajar</span></div></div>
+          </article>
+          <article class="identity card reveal" data-delay="100">
+            <h3>Identitas Akademik</h3>
+            <div class="id-row"><span>Nama</span><b>Maruf Hamen, S.Pd</b></div>
+            <div class="id-row"><span>NIM</span><b>2025492661</b></div>
+            <div class="id-row"><span>Program Studi</span><b>Pendidikan Guru Sekolah Dasar</b></div>
+            <div class="id-row"><span>LPTK</span><b>Universitas Pattimura</b></div>
+            <div class="id-row"><span>Program</span><b>PPG Prajabatan Gelombang 1 Tahun 2026</b></div>
+            <div class="id-row"><span>Tempat PPL</span><b>SD Negeri 70 Ambon</b></div>
+            <div class="id-row"><span>Guru Pamong</span><b>Fitriah Djibran, M.Pd.</b></div>
+            <div class="id-row"><span>Dosen Pengampu Mata Kuliah</span><b>Dr. Samuel P. Ritiauw, M.Pd</b></div>
+          </article>
+          <article class="story-card card reveal" data-delay="150">
+            <span class="label">Benang Merah Dua Semester</span>
+            <h3>Dari memahami fondasi pendidikan menuju praktik yang semakin reflektif.</h3>
+            <p>Semester I membangun fondasi cara saya memahami pendidikan, murid, perencanaan, dan praktik mengajar. Semester II memperdalam fondasi tersebut melalui pembelajaran sosial emosional, asesmen berbasis kebutuhan, PPL mandiri, projek kepemimpinan, serta pembelajaran yang peka terhadap konteks kepulauan.</p>
+            <blockquote>“Saya tidak lagi melihat pembelajaran hanya dari apa yang perlu saya ajarkan, tetapi juga dari siapa yang belajar, bukti pemahaman yang muncul, dan perubahan apa yang perlu saya lakukan setelah mengajar.”</blockquote>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="semester-panel active" data-semester-panel="1" id="semester-1">
+    <div class="semester-panel-banner semester-one-banner"><div class="wrap"><span>Panel Semester I</span><h2>Fondasi perjalanan menjadi guru profesional</h2><p>Enam mata kuliah yang membentuk cara saya memahami pendidikan, murid, perencanaan, dan praktik pembelajaran.</p></div></div>
+    <section id="perjalanan-1" class="section soft-section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="section-kicker">Perjalanan Semester I</span><h2>Enam tahap yang membentuk <span>cara saya melihat profesi guru.</span></h2></div><p>Setiap mata kuliah memberikan lensa yang berbeda, tetapi semuanya bertemu pada satu tujuan: pembelajaran yang lebih berpihak pada murid, terencana, reflektif, dan dapat terus diperbaiki.</p></div>
+        <div class="journey-grid">
+          <article class="journey-card card reveal" data-jump="filosofi"><img src="assets/emblems/filosofi.svg" alt=""><span>01</span><h3>Filosofi Pendidikan</h3><p>Memahami pendidikan sebagai proses menuntun serta menempatkan nilai dan etika dalam keputusan guru.</p><b>Memaknai pendidikan →</b></article>
+          <article class="journey-card card reveal" data-jump="ppdp"><img src="assets/emblems/ppdp.svg" alt=""><span>02</span><h3>Pemahaman tentang Peserta Didik dan Pembelajaran</h3><p>Belajar melihat murid secara holistik melalui asesmen awal, profiling, dan pembelajaran berpusat pada murid.</p><b>Memahami siapa yang belajar →</b></article>
+          <article class="journey-card card reveal" data-jump="pma"><img src="assets/emblems/pma.svg" alt=""><span>03</span><h3>PMA Dasar</h3><p>Membedakan aktivitas yang sekadar aktif dengan pengalaman belajar yang menghasilkan pemahaman mendalam.</p><b>Merancang pengalaman bermakna →</b></article>
+          <article class="journey-card card reveal" data-jump="ppl"><img src="assets/emblems/ppl.svg" alt=""><span>04</span><h3>PPL Terbimbing</h3><p>Menghubungkan perencanaan dengan dinamika nyata kelas melalui praktik, umpan balik, dan refleksi.</p><b>Menguji teori dalam praktik →</b></article>
+          <article class="journey-card card reveal" data-jump="growth"><img src="assets/emblems/growth.svg" alt=""><span>05</span><h3>Growth Mindset</h3><p>Mengubah cara memandang kemampuan, kesalahan, tantangan, dan bahasa yang digunakan saat mendampingi murid.</p><b>Belajar dari tantangan →</b></article>
+          <article class="journey-card card reveal" data-jump="kurikulum"><img src="assets/emblems/kurikulum.svg" alt=""><span>06</span><h3>Perancangan dan Perencanaan Kurikulum</h3><p>Menggunakan backward design untuk menyelaraskan tujuan, asesmen, dan pengalaman belajar.</p><b>Merancang lebih terarah →</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="refleksi-1" class="section reflection-section">
+      <div class="wrap">
+        <div class="section-head light reveal"><div><span class="section-kicker">Refleksi 4C</span><h2>Enam refleksi pengalaman belajar <span>Semester I.</span></h2></div><p>Pilih mata kuliah untuk membaca Connection, Challenge, Concept, Change, analisis artefak, dan perubahan praktis yang ingin saya lakukan.</p></div>
+
+        <div class="course-switcher reveal" role="tablist" aria-label="Pilih mata kuliah">
+          <button class="course-tab active" data-course="filosofi" role="tab" aria-selected="true"><img src="assets/emblems/filosofi.svg" alt=""><span><b>01</b> Filosofi</span></button>
+          <button class="course-tab" data-course="ppdp" role="tab" aria-selected="false"><img src="assets/emblems/ppdp.svg" alt=""><span><b>02</b> PPDP</span></button>
+          <button class="course-tab" data-course="pma" role="tab" aria-selected="false"><img src="assets/emblems/pma.svg" alt=""><span><b>03</b> PMA</span></button>
+          <button class="course-tab" data-course="ppl" role="tab" aria-selected="false"><img src="assets/emblems/ppl.svg" alt=""><span><b>04</b> PPL</span></button>
+          <button class="course-tab" data-course="growth" role="tab" aria-selected="false"><img src="assets/emblems/growth.svg" alt=""><span><b>05</b> Growth</span></button>
+          <button class="course-tab" data-course="kurikulum" role="tab" aria-selected="false"><img src="assets/emblems/kurikulum.svg" alt=""><span><b>06</b> PPK</span></button>
+        </div>
+
+        <div class="reflection-panels">
+          <!-- FILOSOFI -->
+          <article class="reflection-panel active" data-panel="filosofi">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 01</span><h3>Filosofi Pendidikan dan Pendidikan Nilai</h3><p>Memaknai kembali peran guru sebagai pendidik yang menuntun, memberi teladan, dan mengambil keputusan dengan kesadaran nilai serta etika.</p></div><img src="assets/emblems/filosofi.svg" alt="Emblem Filosofi Pendidikan"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Materi perkuliahan ini menguatkan pemahaman saya bahwa menjadi guru bukan sekadar menyampaikan pengetahuan, tetapi menuntun murid agar berkembang sesuai kodrat alam dan kodrat zamannya. Pemikiran Ki Hadjar Dewantara, pendidikan kontekstual, pendidikan nilai, dan kode etik membuat saya semakin memahami bahwa keputusan guru perlu mempertimbangkan potensi, kebutuhan, lingkungan sosial budaya, serta martabat setiap murid.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Hal yang paling menantang adalah pergeseran dari kebiasaan melihat keberhasilan terutama dari tersampaikannya materi menuju pertanyaan yang lebih mendasar: apakah pembelajaran benar-benar berpihak pada murid dan relevan dengan kehidupannya. Studi kasus Ali yang mogok sekolah menunjukkan bahwa masalah belajar tidak selalu berasal dari kemampuan akademik, sehingga guru perlu mendengar dan memahami akar masalah sebelum memberi tuntutan.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama yang saya pelajari ialah pendidikan sebagai proses menuntun; kodrat alam dan kodrat zaman; pembelajaran kontekstual; Pancasila sebagai landasan nilai; peran guru dalam menanamkan nilai; dan kode etik sebagai pedoman tindakan profesional. Nilai harus hadir dalam keteladanan, komunikasi, keputusan, perlakuan terhadap perbedaan, dan budaya kelas.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin lebih konsisten memulai pembelajaran dari kondisi nyata murid, memberi ruang untuk mendengar kebutuhan mereka, menggunakan contoh yang dekat dengan lingkungan, serta menghindari satu standar untuk semua. Dalam mengambil keputusan, saya juga ingin lebih sadar pada nilai, etika, dan dampaknya bagi murid, lalu menjadikan refleksi sebagai kebiasaan profesional.</p></div>
+            </div>
+            <div class="artifact-analysis">
+              <div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Menghubungkan filosofi dengan persoalan konkret.</h4><p><b>Artefak pilihan:</b> Refleksi dan Aksi Nyata serta tugas Kode Etik dalam Kerangka Pendidikan Nilai. Artefak tersebut menunjukkan proses dari memahami filosofi dan nilai hingga merumuskan tindakan sebagai calon guru.</p><p><b>Bagian yang paling mendukung:</b> rancangan tindakan yang berpusat pada diri, murid, dan sekolah serta penegasan bahwa perilaku dan keputusan guru harus berpijak pada nilai dan menjaga kepentingan murid.</p><div class="practice-flow"><span>Menuntun</span><i>→</i><span>Memahami konteks</span><i>→</i><span>Keputusan etis</span><i>→</i><span>Refleksi</span></div></div>
+              <div class="featured-docs"><a class="doc-card preview-doc" href="documents/filosofi/aksi-nyata.pdf" data-pdf="documents/filosofi/aksi-nyata.pdf"><img src="assets/images/artifacts/filosofi-aksi.jpg" alt="Preview Refleksi dan Aksi Nyata"><div><b>Refleksi dan Aksi Nyata</b><span>Bukti perubahan dari pemahaman menuju komitmen tindakan.</span></div></a><a class="doc-card preview-doc" href="documents/filosofi/kode-etik.pdf" data-pdf="documents/filosofi/kode-etik.pdf"><img src="assets/images/artifacts/filosofi-kode.jpg" alt="Preview Kode Etik"><div><b>Kode Etik dalam Pendidikan Nilai</b><span>Menempatkan tanggung jawab moral dan profesional guru.</span></div></a></div>
+            </div>
+            <div class="before-after"><div><small>DULU</small><b>Keberhasilan mudah diukur dari materi yang selesai.</b></div><div><small>SEKARANG</small><b>Pendidikan saya pahami sebagai proses menuntun murid secara utuh.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menimbang nilai, konteks, dan dampak setiap keputusan bagi murid.</b></div></div>
+          </article>
+
+          <!-- PPDP -->
+          <article class="reflection-panel" data-panel="ppdp">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 02</span><h3>Pemahaman tentang Peserta Didik dan Pembelajaran</h3><p>Belajar melihat murid secara lebih holistik dan menggunakan data sebagai dasar keputusan pembelajaran.</p></div><img src="assets/emblems/ppdp.svg" alt="Emblem Peserta Didik"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Pembelajaran yang baik harus dimulai dari pemahaman terhadap siapa yang belajar. Saat melakukan asesmen awal dan profiling kelas III SD Negeri 70 Ambon, saya menemukan variasi kemampuan dan kebutuhan belajar pada 19 murid: 11 kategori mandiri/tinggi, 7 berkembang/sedang, dan 1 membutuhkan bimbingan lebih dekat. Data itu menegaskan bahwa satu kelas tidak pernah benar-benar seragam.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Tantangan paling menonjol adalah mengubah kebiasaan merancang pembelajaran berdasarkan asumsi umum tentang kelas menjadi pembelajaran berbasis data tentang murid. Saya juga belajar untuk tidak terburu-buru memberi label karena murid yang pasif, mudah terdistraksi, atau belum mampu menjawab bisa saja memerlukan dukungan, cara penyajian, waktu, atau rasa aman yang berbeda.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep penting meliputi karakteristik dan perkembangan peserta didik, perbedaan individu, teori belajar, motivasi, pembelajaran berpusat pada murid, asesmen awal, profiling, pengelolaan kelas, pembelajaran inklusif, dan diferensiasi. Asesmen dan observasi saya pahami sebagai sumber informasi untuk menentukan dukungan, strategi, media, pengelompokan, dan tindak lanjut.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin membiasakan asesmen awal dan profiling sebelum menyusun keputusan pembelajaran, lalu menggabungkan data tes dengan observasi keterlibatan, kemandirian, keberanian bertanya, interaksi sosial, dan kebutuhan dukungan. Perkembangan murid akan saya catat berkala agar rancangan berikutnya dapat diperbaiki berdasarkan data, bukan dugaan.</p></div>
+            </div>
+            <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Dari data murid menuju rekomendasi pembelajaran.</h4><p><b>Artefak pilihan:</b> Lembar Kerja Aktivitas 4b Rekomendasi Desain Pembelajaran dan Laporan UAS PPDP. Keduanya menunjukkan proses dari pengumpulan data, analisis kebutuhan, hingga perancangan tindak lanjut.</p><p><b>Bagian yang paling mendukung:</b> pemetaan 19 murid serta temuan bahwa kebutuhan belajar tidak hanya terkait hasil tes, tetapi juga fokus, keberanian, kemandirian, kerja sama, dan rasa nyaman.</p><div class="practice-flow"><span>Asesmen awal</span><i>→</i><span>Profiling</span><i>→</i><span>Strategi berbeda</span><i>→</i><span>Pantau perkembangan</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/ppdp/profiling-peserta-didik.pdf" data-pdf="documents/ppdp/profiling-peserta-didik.pdf"><img src="assets/images/artifacts/ppdp-profiling.jpg" alt="Preview profiling"><div><b>Profiling Peserta Didik</b><span>Bukti pemetaan kebutuhan dan rekomendasi desain pembelajaran.</span></div></a><a class="doc-card preview-doc" href="documents/ppdp/laporan-uas-ppdp.pdf" data-pdf="documents/ppdp/laporan-uas-ppdp.pdf"><img src="assets/images/artifacts/ppdp-uas.jpg" alt="Preview UAS PPDP"><div><b>Laporan UAS PPDP</b><span>Observasi, asesmen awal, profiling, dan rancangan tindak lanjut.</span></div></a></div></div>
+            <div class="before-after"><div><small>DULU</small><b>Perbedaan murid sering baru terlihat ketika pembelajaran berlangsung.</b></div><div><small>SEKARANG</small><b>Perbedaan perlu dipetakan sebelum mengambil keputusan pembelajaran.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menggunakan data awal dan catatan perkembangan secara konsisten.</b></div></div>
+          </article>
+
+          <!-- PMA -->
+          <article class="reflection-panel" data-panel="pma">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 03</span><h3>Pembelajaran Mendalam dan Asesmen (PMA) Dasar</h3><p>Belajar merancang pengalaman yang tidak berhenti pada aktivitas, tetapi menghasilkan pemahaman dan bukti belajar.</p></div><img src="assets/emblems/pma.svg" alt="Emblem PMA"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Mata kuliah ini berkaitan langsung dengan tugas calon guru untuk merancang pembelajaran yang tidak berhenti pada aktivitas yang ramai atau penyelesaian tugas, tetapi menghasilkan pemahaman yang bermakna. Melalui analisis kasus, perencanaan, implementasi, dan refleksi, saya belajar menghubungkan tujuan, pengalaman belajar, asesmen, dan konteks kehidupan murid.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Tantangan terbesar adalah membedakan pembelajaran yang sekadar aktif dengan pembelajaran yang benar-benar mendalam. Diskusi, proyek, atau media belum otomatis menghasilkan pemahaman apabila pertanyaan, tugas, dan asesmennya masih dangkal. Saya juga melihat bahwa murid aktif dapat mendominasi kelompok sementara murid lain tetap pasif.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama meliputi pembelajaran mendalam yang berkesadaran, bermakna, dan menggembirakan; keterkaitan pengetahuan dengan situasi nyata; aktivitas berpikir tingkat tinggi; asesmen sebagai bagian dari siklus pembelajaran; keselarasan tujuan, kegiatan, dan bukti belajar; serta refleksi dan perbaikan berkelanjutan.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin memulai dari pengalaman nyata murid dan pertanyaan pemantik yang lebih tajam, membagi peran agar partisipasi kelompok lebih merata, menggunakan asesmen formatif selama proses, serta memakai refleksi penutup untuk melihat bukan hanya apa yang murid ketahui, tetapi bagaimana mereka memahami dan menggunakan pengetahuan tersebut.</p></div>
+            </div>
+            <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Praktik, umpan balik, lalu perbaikan.</h4><p><b>Artefak pilihan:</b> Praktik Implementasi Pembelajaran Mendalam dan RTL Topik 3. Artefak implementasi menunjukkan penerapan langsung, sedangkan RTL menunjukkan bahwa hasil praktik dibaca kembali untuk menemukan kekurangan dan menentukan perbaikan konkret.</p><p><b>Bagian yang paling mendukung:</b> tujuan yang meminta murid mengidentifikasi, menganalisis, berdiskusi, dan menyajikan solusi, lalu temuan bahwa pertanyaan pemantik masih terlalu umum dan partisipasi belum merata diperbaiki melalui konteks yang lebih dekat, pembagian peran, dan bantuan sesuai kebutuhan.</p><div class="practice-flow"><span>Konteks nyata</span><i>→</i><span>Berpikir</span><i>→</i><span>Asesmen formatif</span><i>→</i><span>Perbaikan</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/pma/implementasi-pembelajaran-mendalam.pdf" data-pdf="documents/pma/implementasi-pembelajaran-mendalam.pdf"><img src="assets/images/artifacts/pma-implementasi.jpg" alt="Preview implementasi PMA"><div><b>Praktik Implementasi</b><span>Penerapan prinsip pembelajaran mendalam dalam pengalaman belajar.</span></div></a><a class="doc-card preview-doc" href="documents/pma/rtl-topik-3.pdf" data-pdf="documents/pma/rtl-topik-3.pdf"><img src="assets/images/artifacts/pma-rtl.jpg" alt="Preview RTL PMA"><div><b>RTL Topik 3</b><span>Umpan balik, temuan, dan perbaikan konkret setelah praktik.</span></div></a></div></div>
+            <div class="before-after"><div><small>DULU</small><b>Aktivitas yang ramai mudah dianggap sebagai pembelajaran yang mendalam.</b></div><div><small>SEKARANG</small><b>Kedalaman terlihat dari pemahaman, alasan, konteks, dan bukti belajar.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menajamkan pertanyaan, peran kelompok, dan asesmen selama proses.</b></div></div>
+          </article>
+
+          <!-- PPL -->
+          <article class="reflection-panel" data-panel="ppl">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 04</span><h3>PPL Terbimbing</h3><p>Ruang paling nyata untuk menghubungkan teori perkuliahan dengan praktik profesional di sekolah.</p></div><img src="assets/emblems/ppl.svg" alt="Emblem PPL"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Di SD Negeri 70 Ambon saya tidak hanya mengamati pembelajaran, tetapi juga melakukan asistensi, menyusun perangkat, menyiapkan media, melaksanakan praktik dalam beberapa siklus, melakukan asesmen, menerima umpan balik, dan merefleksikan pembelajaran. Saya memahami bahwa kompetensi guru terbentuk melalui proses mencoba, mengamati respons murid, menerima masukan, lalu memperbaiki praktik.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Tantangan utama adalah perbedaan antara rencana yang terlihat baik di atas kertas dan dinamika kelas yang sebenarnya. Murid memiliki kemampuan, keberanian, konsentrasi, dan kecepatan belajar berbeda; waktu terbatas; partisipasi kelompok tidak selalu merata; dan media tetap membutuhkan pertanyaan serta cara penggunaan yang tepat.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep penting yang saya peroleh adalah praktik reflektif, pengelolaan kelas, asesmen berkelanjutan, adaptasi pembelajaran, media kontekstual, scaffolding, dan kolaborasi profesional. Perencanaan, pelaksanaan, asesmen, dan refleksi merupakan satu rangkaian yang tidak dapat dipisahkan.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin lebih disiplin menyiapkan pembelajaran berdasarkan data awal murid, menyiapkan alternatif ketika strategi pertama tidak berjalan, membuat peran kelompok lebih terstruktur, dan mengumpulkan bukti sederhana selama pembelajaran agar evaluasi setelah mengajar tidak hanya berdasarkan perasaan. Setiap refleksi harus menghasilkan satu atau dua perbaikan yang benar-benar dilaksanakan.</p></div>
+            </div>
+            <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Ada rencana, pelaksanaan, dan jejak refleksi.</h4><p><b>Artefak pilihan:</b> Modul Ajar Siklus II, LK Refleksi Siklus II, dan dokumentasi perjalanan PPL. Kombinasi tersebut memperlihatkan teori yang diterjemahkan menjadi rencana, pelaksanaan nyata, umpan balik, lalu perbaikan dari satu siklus ke siklus berikutnya.</p><p><b>Bagian yang paling mendukung:</b> identifikasi karakteristik murid yang beragam, penggunaan media dan diskusi, catatan hasil praktik, serta perbaikan berdasarkan masukan guru pamong dan pengalaman kelas.</p><div class="practice-flow"><span>Rencana</span><i>→</i><span>Praktik</span><i>→</i><span>Bukti</span><i>→</i><span>Refleksi</span><i>→</i><span>Perbaikan</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/ppl/modul-ajar-siklus-2.pdf" data-pdf="documents/ppl/modul-ajar-siklus-2.pdf"><img src="assets/images/artifacts/ppl-modul.jpg" alt="Preview modul ajar PPL"><div><b>Modul Ajar Siklus II</b><span>Rancangan konkret yang menghubungkan kebutuhan murid dan strategi pembelajaran.</span></div></a><a class="doc-card preview-doc" href="documents/ppl/refleksi-siklus-2.pdf" data-pdf="documents/ppl/refleksi-siklus-2.pdf"><img src="assets/images/artifacts/ppl-refleksi.jpg" alt="Preview refleksi PPL"><div><b>Refleksi Siklus II</b><span>Jejak umpan balik dan perbaikan praktik mengajar.</span></div></a></div></div>
+            <div class="before-after"><div><small>DULU</small><b>Rencana pembelajaran terasa sebagai skenario yang perlu diikuti.</b></div><div><small>SEKARANG</small><b>Rencana adalah panduan yang harus adaptif terhadap dinamika kelas.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menggunakan bukti observasi untuk menentukan perbaikan berikutnya.</b></div></div>
+          </article>
+
+          <!-- GROWTH -->
+          <article class="reflection-panel" data-panel="growth">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 05</span><h3>Pola Pikir Bertumbuh dalam Pembelajaran</h3><p>Mengubah bahasa, respons, dan cara memandang kemampuan agar murid melihat tantangan sebagai bagian dari proses belajar.</p></div><img src="assets/emblems/growth.svg" alt="Emblem Growth Mindset"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Cara guru memandang kemampuan murid akan memengaruhi cara memberi tugas, menanggapi kesalahan, dan memberi umpan balik. Kalimat “belum bisa” memiliki makna berbeda dari “tidak bisa”. Ketika guru percaya kemampuan dapat berkembang melalui usaha, strategi, latihan, dan bantuan yang tepat, guru terdorong mencari pendekatan yang membantu murid bertumbuh.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Saya menyadari bahwa fixed mindset dapat muncul secara halus ketika terlalu cepat menilai murid berdasarkan hasil, membandingkan kecepatan belajar, atau menganggap metode yang pernah berhasil akan selalu cocok. Mata kuliah ini menantang saya untuk melihat kesalahan sebagai informasi tentang bagian yang perlu diperbaiki.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama meliputi fixed mindset dan growth mindset, kemampuan otak untuk terus berkembang melalui proses belajar, makna kata “belum”, nilai dari tantangan dan kesalahan, serta umpan balik yang berfokus pada proses, usaha, strategi, dan perkembangan. Growth mindset juga berkaitan dengan kreativitas, inovasi, keberanian mencoba, refleksi, dan ketekunan.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin mengubah bahasa dan respons di kelas. Ketika murid berkata “saya tidak bisa”, saya akan membantu mengubahnya menjadi “saya belum bisa” dan mencari strategi berikutnya. Saya akan mengurangi pujian yang hanya menekankan label “pintar”, lebih banyak mengapresiasi proses, ketekunan, keberanian bertanya, dan perbaikan, serta menjadikan kesalahan sebagai bahan diskusi yang aman.</p></div>
+            </div>
+            <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Perubahan bahasa menunjukkan perubahan cara pandang.</h4><p><b>Artefak pilihan:</b> LK “Aku Belum Berhasil, Bukan Tidak Berhasil”, “Guru yang Menumbuhkan Growth Mindset”, dan “Mengubah Responmu untuk Kelas Bertumbuh”. Artefak tersebut membentuk alur dari memahami konsep hingga menerapkannya dalam respons guru di kelas.</p><p><b>Bagian yang paling mendukung:</b> perubahan kalimat dari “aku gagal lagi, percuma mencoba” menjadi “aku belum berhasil, jadi harus mencoba lagi”, serta respons guru “kalau murid tidak paham, berarti saya perlu mencoba cara lain”.</p><div class="practice-flow"><span>Belum</span><i>→</i><span>Strategi baru</span><i>→</i><span>Umpan balik proses</span><i>→</i><span>Bertumbuh</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/growth/aku-belum-berhasil.pdf" data-pdf="documents/growth/aku-belum-berhasil.pdf"><img src="assets/images/artifacts/growth-belum.jpg" alt="Preview LK Growth Mindset"><div><b>Aku Belum Berhasil</b><span>Perubahan bahasa dari pola pikir tetap menuju pola pikir bertumbuh.</span></div></a><a class="doc-card preview-doc" href="documents/growth/mengubah-respon-kelas.pdf" data-pdf="documents/growth/mengubah-respon-kelas.pdf"><img src="assets/images/artifacts/growth-respon.jpg" alt="Preview respon kelas bertumbuh"><div><b>Mengubah Responmu</b><span>Contoh respons guru terhadap kegagalan, ketakutan, dan koreksi.</span></div></a></div></div>
+            <div class="before-after"><div><small>DULU</small><b>Hasil belajar mudah berubah menjadi label tentang kemampuan.</b></div><div><small>SEKARANG</small><b>Kemampuan saya pahami dapat berkembang melalui proses dan strategi.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menggunakan bahasa “belum” dan umpan balik yang berfokus pada proses.</b></div></div>
+          </article>
+
+          <!-- KURIKULUM -->
+          <article class="reflection-panel" data-panel="kurikulum">
+            <div class="reflection-title"><div><span class="chapter">REFLEKSI 06</span><h3>Perencanaan dan Perancangan Kurikulum</h3><p>Mengubah cara merancang dari “aktivitas apa yang menarik?” menjadi “pemahaman apa yang harus dicapai dan bukti apa yang menunjukkannya?”.</p></div><img src="assets/emblems/kurikulum.svg" alt="Emblem Kurikulum"></div>
+            <div class="fourc-grid">
+              <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Melalui Understanding by Design (UbD), saya belajar bahwa guru tidak seharusnya memulai perencanaan dari daftar kegiatan, tetapi dari hasil belajar dan pemahaman yang ingin dicapai. Setelah itu guru menentukan bukti asesmen yang menunjukkan tercapainya pemahaman, baru kemudian merancang pengalaman belajar. Cara berpikir ini membuat perencanaan lebih terarah.</p></div>
+              <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Materi paling berbeda dari kebiasaan sebelumnya adalah backward design. Sangat mudah memulai dari metode, media, atau aktivitas yang menarik, lalu menyesuaikan tujuan di belakang. UbD menuntut sebaliknya dan menantang saya memastikan setiap tujuan memiliki bukti asesmen yang tepat serta setiap kegiatan benar-benar mendukung tujuan tersebut.</p></div>
+              <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama ialah tiga tahap UbD: menentukan hasil yang diinginkan, menentukan bukti asesmen, dan merancang pengalaman belajar. Saya juga belajar tentang keselarasan tujuan–asesmen–aktivitas, pertanyaan esensial, transfer pemahaman, evaluasi rancangan, dimensi pengetahuan, serta rekomendasi perbaikan berbasis bukti.</p></div>
+              <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin membiasakan backward design saat menyusun modul ajar: memperjelas pemahaman dan kemampuan transfer, menentukan bukti yang benar-benar menunjukkan pemahaman, lalu memilih kegiatan, media, dan strategi. Sebelum digunakan, saya akan memeriksa keselarasan ketiga tahap dan memperbaiki bagian yang tidak mendukung tujuan.</p></div>
+            </div>
+            <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Kualitas rancangan dibaca dari keselarasan, bukan sekadar kelengkapan.</h4><p><b>Artefak pilihan:</b> UTS Modul Ajar IPAS Kelas V berbasis UbD dan LK Evaluasi UbD. Artefak tersebut menunjukkan kemampuan merancang sekaligus menilai kembali keselarasan desain.</p><p><b>Bagian yang paling mendukung:</b> struktur tiga tahap UbD serta temuan bahwa beberapa tujuan belum sepenuhnya selaras dengan bukti asesmen dan aktivitas, lalu diperbaiki melalui penguatan hasil yang diinginkan, bukti asesmen, dan kegiatan yang lebih terarah.</p><div class="practice-flow"><span>Hasil yang diinginkan</span><i>→</i><span>Bukti asesmen</span><i>→</i><span>Pengalaman belajar</span><i>→</i><span>Cek selaras</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/kurikulum/uts-ubd.pdf" data-pdf="documents/kurikulum/uts-ubd.pdf"><img src="assets/images/artifacts/kurikulum-ubd.jpg" alt="Preview UTS UbD"><div><b>UTS — Rancangan UbD</b><span>Penerapan backward design dalam modul ajar.</span></div></a><a class="doc-card preview-doc" href="documents/kurikulum/evaluasi-ubd.pdf" data-pdf="documents/kurikulum/evaluasi-ubd.pdf"><img src="assets/images/artifacts/kurikulum-evaluasi.jpg" alt="Preview evaluasi UbD"><div><b>Evaluasi UbD</b><span>Menilai keselarasan tujuan, bukti asesmen, dan pengalaman belajar.</span></div></a></div></div>
+            <div class="before-after"><div><small>DULU</small><b>Perencanaan mudah dimulai dari metode, media, atau aktivitas.</b></div><div><small>SEKARANG</small><b>Saya memulai dari hasil belajar dan bukti pemahaman yang diinginkan.</b></div><div><small>SELANJUTNYA</small><b>Saya akan memeriksa alignment tujuan–asesmen–aktivitas sebelum mengajar.</b></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="artefak-1" class="section artifact-section">
+      <div class="wrap">
+        <div class="section-head reveal"><div><span class="section-kicker">Museum Digital</span><h2>Artefak yang menjadi <span>bukti proses belajar.</span></h2></div><p>Artefak dipilih karena mendukung refleksi, bukan sekadar karena merupakan tugas. Gunakan filter untuk melihat bukti dari setiap mata kuliah.</p></div>
+        <div class="artifact-filters reveal"><button class="active" data-filter="all">Semua</button><button data-filter="filosofi">Filosofi</button><button data-filter="ppdp">Peserta Didik</button><button data-filter="pma">PMA</button><button data-filter="ppl">PPL</button><button data-filter="growth">Growth</button><button data-filter="kurikulum">Kurikulum</button></div>
+        <div class="artifact-grid">
+          <article class="artifact-item reveal" data-category="filosofi"><img src="assets/images/artifacts/filosofi-aksi.jpg" alt="Artefak refleksi dan aksi nyata"><div class="artifact-info"><span>Filosofi · Refleksi</span><h3>Refleksi dan Aksi Nyata</h3><p>Menerjemahkan pemahaman filosofis menjadi komitmen tindakan.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/filosofi/aksi-nyata.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/filosofi/aksi-nyata.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="filosofi"><img src="assets/images/artifacts/filosofi-kode.jpg" alt="Artefak kode etik"><div class="artifact-info"><span>Filosofi · Etika</span><h3>Kode Etik Guru</h3><p>Menegaskan tanggung jawab moral dan profesional dalam keputusan guru.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/filosofi/kode-etik.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/filosofi/kode-etik.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="ppdp"><img src="assets/images/artifacts/ppdp-profiling.jpg" alt="Artefak profiling"><div class="artifact-info"><span>PPDP · Profiling</span><h3>Profiling Peserta Didik</h3><p>Menggunakan data murid untuk menyusun rekomendasi desain pembelajaran.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/ppdp/profiling-peserta-didik.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/ppdp/profiling-peserta-didik.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="ppdp"><img src="assets/images/artifacts/ppdp-uas.jpg" alt="Artefak UAS PPDP"><div class="artifact-info"><span>PPDP · UAS</span><h3>Laporan UAS PPDP</h3><p>Observasi, asesmen awal, profiling, dan rancangan tindak lanjut.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/ppdp/laporan-uas-ppdp.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/ppdp/laporan-uas-ppdp.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="pma"><img src="assets/images/artifacts/pma-implementasi.jpg" alt="Artefak implementasi PMA"><div class="artifact-info"><span>PMA · Implementasi</span><h3>Praktik Pembelajaran Mendalam</h3><p>Menghubungkan konteks, proses berpikir, diskusi, dan bukti pemahaman.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/pma/implementasi-pembelajaran-mendalam.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/pma/implementasi-pembelajaran-mendalam.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="pma"><img src="assets/images/artifacts/pma-rtl.jpg" alt="Artefak RTL PMA"><div class="artifact-info"><span>PMA · RTL</span><h3>RTL Topik 3</h3><p>Menunjukkan temuan praktik, umpan balik, dan rencana perbaikan.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/pma/rtl-topik-3.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/pma/rtl-topik-3.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="ppl"><img src="assets/images/artifacts/ppl-modul.jpg" alt="Artefak modul ajar PPL"><div class="artifact-info"><span>PPL · Perencanaan</span><h3>Modul Ajar Siklus II</h3><p>Bukti teori yang diterjemahkan menjadi rencana pembelajaran konkret.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/ppl/modul-ajar-siklus-2.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/ppl/modul-ajar-siklus-2.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="ppl"><img src="assets/images/artifacts/ppl-refleksi.jpg" alt="Artefak refleksi PPL"><div class="artifact-info"><span>PPL · Refleksi</span><h3>Refleksi Siklus II</h3><p>Bukti bahwa praktik dibaca kembali untuk menentukan perbaikan.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/ppl/refleksi-siklus-2.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/ppl/refleksi-siklus-2.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="growth"><img src="assets/images/artifacts/growth-belum.jpg" alt="Artefak growth mindset"><div class="artifact-info"><span>Growth · Bahasa</span><h3>Aku Belum Berhasil</h3><p>Memperlihatkan perubahan bahasa dari fixed mindset ke growth mindset.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/growth/aku-belum-berhasil.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/growth/aku-belum-berhasil.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="growth"><img src="assets/images/artifacts/growth-respon.jpg" alt="Artefak respon kelas bertumbuh"><div class="artifact-info"><span>Growth · Praktik</span><h3>Mengubah Responmu</h3><p>Respons guru terhadap kegagalan, ketakutan, dan koreksi di kelas.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/growth/mengubah-respon-kelas.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/growth/mengubah-respon-kelas.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="kurikulum"><img src="assets/images/artifacts/kurikulum-ubd.jpg" alt="Artefak UTS UbD"><div class="artifact-info"><span>Kurikulum · UbD</span><h3>UTS — Rancangan UbD</h3><p>Menerapkan backward design dalam modul ajar.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/kurikulum/uts-ubd.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/kurikulum/uts-ubd.pdf" target="_blank">Buka PDF</a></div></div></article>
+          <article class="artifact-item reveal" data-category="kurikulum"><img src="assets/images/artifacts/kurikulum-evaluasi.jpg" alt="Artefak evaluasi UbD"><div class="artifact-info"><span>Kurikulum · Evaluasi</span><h3>Evaluasi UbD</h3><p>Menilai keselarasan hasil, asesmen, dan pengalaman belajar.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/kurikulum/evaluasi-ubd.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/kurikulum/evaluasi-ubd.pdf" target="_blank">Buka PDF</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section memories-section">
+      <div class="wrap">
+        <div class="memory-card card reveal">
+          <div class="memory-head"><div><span class="section-kicker">Momen Praktik</span><h2>Belajar bersama murid, guru pamong, dan komunitas sekolah.</h2><p>Dokumentasi ini memperkuat bahwa refleksi tidak berdiri sendiri; ia lahir dari pengalaman nyata di kelas dan interaksi profesional selama PPL.</p></div><div class="memory-controls"><button id="momentPrev" aria-label="Foto sebelumnya">‹</button><button id="momentNext" aria-label="Foto berikutnya">›</button></div></div>
+          <div class="moment-slider" id="momentSlider"><figure><img src="assets/images/moments/moment-01.jpg" alt="Praktik mengajar di kelas"><figcaption>Praktik mengajar</figcaption></figure><figure><img src="assets/images/moments/moment-02.jpg" alt="Pendampingan murid"><figcaption>Pendampingan murid</figcaption></figure><figure><img src="assets/images/moments/moment-03.jpg" alt="Pembelajaran dan diskusi"><figcaption>Pembelajaran dan diskusi</figcaption></figure><figure><img src="assets/images/moments/moment-04.jpg" alt="Aktivitas murid"><figcaption>Aktivitas murid</figcaption></figure><figure><img src="assets/images/moments/moment-05.jpg" alt="Bersama guru dan rekan"><figcaption>Kolaborasi profesional</figcaption></figure><figure><img src="assets/images/moments/moment-06.jpg" alt="Kebersamaan di sekolah"><figcaption>Komunitas sekolah</figcaption></figure></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="refleksi-akhir-1" class="section final-section">
+      <div class="wrap">
+        <div class="final-card final-card-background reveal">
+          <img class="final-card-bgimage" src="assets/images/final/refleksi-akhir-bg-clean.png" alt="" aria-hidden="true">
+          <div class="final-copy">
+            <span class="section-kicker light-kicker">Refleksi Akhir</span>
+            <h2>Dari mahasiswa PPG menuju guru yang <span>terus belajar.</span></h2>
+            <p>Enam pengalaman belajar Semester I mengubah cara saya melihat profesi guru. Filosofi pendidikan mengingatkan saya untuk menuntun; PPDP mengajarkan bahwa keputusan harus berangkat dari pemahaman terhadap murid; PMA menuntut kedalaman, bukan sekadar aktivitas; PPL menguji teori dalam dinamika kelas; growth mindset mengubah bahasa dan respons terhadap kegagalan; sedangkan UbD menata cara saya merancang agar tujuan, asesmen, dan pengalaman belajar benar-benar selaras.</p>
+            <p>Perubahan yang ingin saya jaga bukan hanya pada perangkat pembelajaran, tetapi pada kebiasaan profesional: mengumpulkan data sebelum mengambil keputusan, mendengar murid, merancang dengan tujuan yang jelas, mencari bukti pemahaman, menerima umpan balik, dan selalu menentukan tindak lanjut setelah refleksi.</p>
+            <div class="commitment-grid">
+              <div><b>01</b><span>Berangkat dari murid</span></div>
+              <div><b>02</b><span>Merancang dengan tujuan</span></div>
+              <div><b>03</b><span>Menggunakan bukti belajar</span></div>
+              <div><b>04</b><span>Merefleksi dan memperbaiki</span></div>
+            </div>
+            <div class="final-actions">
+              <a class="btn btn-primary" href="documents/LK-2-Refleksi-Semester-I.pdf" target="_blank" rel="noopener">Buka LK 2 Lengkap</a>
+              <a class="btn btn-ghost" href="index.html">Kembali ke Beranda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
-    <div class="mini reveal">
-      <h4>Kelebihan Artefak</h4>
-      <p>Kelebihan artefak terletak pada penggunaan media konkret, aktivitas diskusi, LKPD, permainan, dan dokumentasi yang membuat pembelajaran lebih hidup dan bermakna.</p>
+
+    <div class="semester-panel" data-semester-panel="2" id="semester-2" hidden>
+      <div class="semester-panel-banner semester-two-banner">
+        <div class="wrap"><span>Panel Semester II</span><h2>Memperdalam pemahaman dan menguatkan praktik</h2><p>Lima mata kuliah yang mempertemukan pembelajaran sosial emosional, asesmen, praktik mandiri, kepemimpinan, dan konteks kepulauan.</p></div>
+      </div>
+
+      <section id="perjalanan-2" class="chapter-preview section semester-two-chapters">
+        <div class="wrap">
+          <div class="chapter-head reveal"><span class="section-kicker centered">Lima Mata Kuliah Semester II</span><h2>Refleksi yang tumbuh dari pengalaman nyata</h2><p>Setiap mata kuliah dibaca melalui Connection, Challenge, Concept, Change, dan bukti artefak pembelajaran.</p></div>
+          <div class="chapter-grid semester-two-grid">
+            <article class="chapter-card reveal"><div class="chapter-top"><span class="chapter-no gold">01</span><img src="assets/emblems/pse.svg" alt="Emblem PSE"></div><h3>Pembelajaran Sosial Emosional</h3><p>Membangun kelas yang aman, berelasi, dan peka terhadap emosi murid.</p><button class="chapter-link gold" data-jump="s2-pse" aria-label="Buka refleksi PSE">→</button></article>
+            <article class="chapter-card reveal" data-delay="50"><div class="chapter-top"><span class="chapter-no green">02</span><img src="assets/emblems/pma-lanjut.svg" alt="Emblem PMA Lanjut"></div><h3>PMA Lanjut</h3><p>Menggunakan asesmen awal dan DUP untuk memperluas akses belajar.</p><button class="chapter-link green" data-jump="s2-pma" aria-label="Buka refleksi PMA Lanjut">→</button></article>
+            <article class="chapter-card reveal" data-delay="100"><div class="chapter-top"><span class="chapter-no orange">03</span><img src="assets/emblems/ppl-mandiri.svg" alt="Emblem PPL Mandiri"></div><h3>PPL Mandiri</h3><p>Mengamati bukti belajar, merefleksi praktik, lalu memperbaikinya.</p><button class="chapter-link orange" data-jump="s2-ppl" aria-label="Buka refleksi PPL Mandiri">→</button></article>
+            <article class="chapter-card reveal" data-delay="150"><div class="chapter-top"><span class="chapter-no violet">04</span><img src="assets/emblems/kepemimpinan.svg" alt="Emblem Projek Kepemimpinan"></div><h3>Projek Kepemimpinan</h3><p>Memimpin inovasi yang berangkat dari kebutuhan sekolah.</p><button class="chapter-link violet" data-jump="s2-projek" aria-label="Buka refleksi Projek Kepemimpinan">→</button></article>
+            <article class="chapter-card reveal" data-delay="200"><div class="chapter-top"><span class="chapter-no teal">05</span><img src="assets/emblems/kepulauan.svg" alt="Emblem Pendidikan Kepulauan"></div><h3>Pendidikan Kepulauan</h3><p>Menjadikan budaya dan potensi Maluku sebagai sumber belajar.</p><button class="chapter-link teal" data-jump="s2-kepulauan" aria-label="Buka refleksi Pendidikan Kepulauan">→</button></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="refleksi-2" class="section reflection-section semester-two-reflection">
+        <div class="wrap">
+          <div class="section-head light reveal"><div><span class="section-kicker">Refleksi 4C Semester II</span><h2>Lima pengalaman belajar yang <span>menguatkan praktik.</span></h2></div><p>Pilih mata kuliah untuk membaca keterhubungan pengalaman, tantangan, konsep utama, perubahan, dan analisis artefaknya.</p></div>
+          <div class="course-switcher semester-two-switcher reveal" role="tablist" aria-label="Pilih mata kuliah Semester II">
+            <button class="course-tab active" data-course="s2-pse" role="tab" aria-selected="true"><img src="assets/emblems/pse.svg" alt=""><span><b>01</b> PSE</span></button>
+            <button class="course-tab" data-course="s2-pma" role="tab" aria-selected="false"><img src="assets/emblems/pma-lanjut.svg" alt=""><span><b>02</b> PMA Lanjut</span></button>
+            <button class="course-tab" data-course="s2-ppl" role="tab" aria-selected="false"><img src="assets/emblems/ppl-mandiri.svg" alt=""><span><b>03</b> PPL Mandiri</span></button>
+            <button class="course-tab" data-course="s2-projek" role="tab" aria-selected="false"><img src="assets/emblems/kepemimpinan.svg" alt=""><span><b>04</b> Kepemimpinan</span></button>
+            <button class="course-tab" data-course="s2-kepulauan" role="tab" aria-selected="false"><img src="assets/emblems/kepulauan.svg" alt=""><span><b>05</b> Kepulauan</span></button>
+          </div>
+
+          <div class="reflection-panels">
+            <article class="reflection-panel active" data-panel="s2-pse">
+              <div class="reflection-title"><div><span class="chapter">REFLEKSI 01 · SEMESTER II</span><h3>Pembelajaran Sosial Emosional</h3><p>Memahami bahwa kesiapan belajar tumbuh dari rasa aman, kemampuan mengelola emosi, dan hubungan yang sehat di kelas.</p></div><img src="assets/emblems/pse.svg" alt="Emblem Pembelajaran Sosial Emosional"></div>
+              <div class="fourc-grid">
+                <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Pengalaman menghadapi murid dengan karakter yang beragam membuat materi Pembelajaran Sosial Emosional terasa dekat dengan peran saya sebagai calon guru. Ada murid yang mudah kehilangan fokus, takut menjawab karena khawatir salah, belum mampu menunggu giliran, atau baru bersedia mengikuti kegiatan setelah didekati secara personal. Dari situ saya melihat bahwa kesiapan belajar tidak hanya ditentukan oleh kemampuan akademik, tetapi juga oleh perasaan, hubungan, dan rasa aman. Ketika menyusun modul ajar Pendidikan Pancasila tentang Lambang Pancasila, lima kompetensi sosial emosional saya hubungkan langsung dengan proses pembelajaran.</p></div>
+                <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Sebelumnya, kelas yang tenang sering saya anggap sebagai tanda pembelajaran berjalan baik. Perkuliahan ini membuat saya menyadari bahwa murid yang diam belum tentu memahami atau merasa nyaman, sementara kelas yang ramai belum tentu memberi kesempatan yang adil. Tantangan lain adalah memahami bahwa guru harus lebih dahulu memberi contoh dalam mengelola emosi. Pilihan kata, nada suara, ekspresi, dan cara menegur dapat membuat murid merasa dibimbing atau justru dipermalukan.</p></div>
+                <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep paling penting bagi saya adalah lima kompetensi CASEL: kesadaran diri, manajemen diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan yang bertanggung jawab. Kelimanya dapat dilatih melalui pemeriksaan emosi, latihan fokus, kesepakatan kelas, komunikasi tenang, kerja kelompok, pemberian kesempatan yang seimbang, serta refleksi. Kelas yang aman bukan kelas tanpa kesalahan, melainkan kelas yang memberi ruang untuk bertanya, mencoba, dan memperbaiki kesalahan tanpa takut ditertawakan.</p></div>
+                <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya ingin memulai pembelajaran dengan pemeriksaan emosi sederhana dan menggunakan latihan pernapasan atau teknik STOP saat dibutuhkan. Kesepakatan kelas akan disusun bersama, sedangkan umpan balik dan teguran diberikan dengan bahasa yang tidak mempermalukan. Saya juga akan memperhatikan murid yang belum mendapat kesempatan, membutuhkan dukungan, atau masih ragu terlibat. Catatan penilaian akan memuat perkembangan akademik dan sosial emosional, disertai evaluasi diri guru secara rutin.</p></div>
+              </div>
+              <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>PSE ditempatkan di dalam pembelajaran, bukan sebagai kegiatan tambahan.</h4><p><b>Artefak pilihan:</b> UTS PSE berupa modul ajar Pendidikan Pancasila yang mengintegrasikan lima kompetensi CASEL, keteladanan guru, dan evaluasi pelaksanaan pembelajaran. Artefak ini dipilih karena menunjukkan perubahan cara pandang saya dan berangkat dari keadaan murid yang benar-benar saya temui.</p><p><b>Bagian yang paling mendukung:</b> pemetaan kompetensi CASEL, guru sebagai teladan, latihan fokus pada pembuka, kerja kelompok, rubrik pengelolaan kelas dan emosi, serta refleksi guru tentang pemerataan partisipasi dan komunikasi yang santun.</p><div class="practice-flow"><span>Kenali emosi</span><i>→</i><span>Bangun rasa aman</span><i>→</i><span>Berelasi</span><i>→</i><span>Refleksi</span></div></div><div class="featured-docs single-doc"><a class="doc-card preview-doc" href="documents/semester-2/pse/uts-pse.pdf" data-pdf="documents/semester-2/pse/uts-pse.pdf"><img src="assets/images/artifacts-sem2/pse-uts.jpg" alt="Pratinjau UTS PSE"><div><b>UTS Pembelajaran Sosial Emosional</b><span>Modul ajar terintegrasi PSE dan karakteristik guru teladan.</span></div></a></div></div>
+              <div class="before-after"><div><small>DULU</small><b>Kelas tenang mudah dianggap sebagai tanda semua murid siap belajar.</b></div><div><small>SEKARANG</small><b>Kesiapan belajar juga dipengaruhi emosi, hubungan, dan rasa aman.</b></div><div><small>SELANJUTNYA</small><b>Saya akan membangun PSE sebagai kebiasaan dalam pembelajaran sehari-hari.</b></div></div>
+            </article>
+
+            <article class="reflection-panel" data-panel="s2-pma">
+              <div class="reflection-title"><div><span class="chapter">REFLEKSI 02 · SEMESTER II</span><h3>Pembelajaran Mendalam dan Asesmen Lanjut</h3><p>Menggunakan data asesmen awal untuk merancang akses, dukungan, dan tantangan belajar yang lebih tepat.</p></div><img src="assets/emblems/pma-lanjut.svg" alt="Emblem PMA Lanjut"></div>
+              <div class="fourc-grid">
+                <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Keterkaitan mata kuliah ini terasa jelas ketika saya melakukan asesmen awal literasi pada murid kelas III di SD Negeri 70 Ambon. Dari 20 murid yang mengikuti asesmen individual, delapan berada pada level Kata, sembilan pada level Lancar, dan tiga pada level Pemahaman. Data tersebut menunjukkan bahwa kemampuan membaca lancar tidak selalu diikuti kemampuan memahami bacaan. Sebagai calon guru, saya memerlukan bukti yang lebih jelas sebelum menentukan kegiatan, media, bantuan, dan tingkat tantangan.</p></div>
+                <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Pemahaman saya tentang keadilan berubah. Adil tidak berarti semua murid mengerjakan tugas yang sama dengan cara yang sama. Tujuan inti dapat tetap setara, tetapi jalannya tidak harus seragam. Murid pada level Kata membutuhkan gambar, kata kunci, pengulangan, dan bantuan bertahap; murid yang lancar masih perlu dikuatkan pemahamannya; sedangkan murid pada level Pemahaman memerlukan pertanyaan yang menuntut alasan dan kesimpulan. Pengelompokan juga tidak boleh berubah menjadi label yang melekat.</p></div>
+                <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Asesmen awal merupakan dasar pengambilan keputusan pembelajaran, bukan sekadar bahan rekapitulasi. Saya juga mempelajari tiga prinsip Desain Universal untuk Pembelajaran: beragam cara membangun keterlibatan, menyajikan informasi, serta memberi kesempatan kepada murid untuk bertindak dan menunjukkan pemahaman. Prinsip tersebut berjalan bersama pembelajaran mendalam yang berkesadaran, bermakna, dan menggembirakan. Akses belajar perlu dipikirkan sejak perencanaan.</p></div>
+                <div class="fourc change"><span>C</span><h4>Change</h4><p>Sebelum menyusun kegiatan dan kelompok, saya akan melakukan asesmen awal yang lebih utuh, mencakup kemampuan membaca, penguasaan konsep, kebutuhan bantuan, dan kondisi nonkognitif. Tujuan utama tetap sama, tetapi teks, media, pertanyaan penuntun, dan bentuk respons dibuat lebih lentur. Pengelompokan akan ditinjau berkala agar murid dapat berpindah sesuai perkembangan, sedangkan beberapa pertanyaan inti yang sama digunakan untuk memperoleh gambaran pemahaman yang lebih adil.</p></div>
+              </div>
+              <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Dari hasil asesmen menuju rancangan pembelajaran yang dapat diakses.</h4><p><b>Artefak pilihan:</b> Laporan Asesmen Awal dan Rancangan Pembelajaran Mendalam Berbasis Desain Universal untuk Pembelajaran. Artefak dipilih karena bertolak dari asesmen individual dan memperlihatkan hubungan antara data, pemetaan kebutuhan, rancangan, serta refleksi profesional.</p><p><b>Bagian yang paling mendukung:</b> rekapitulasi level Kata, Lancar, dan Pemahaman; peta kebutuhan belajar; rancangan berdasarkan tiga prinsip DUP; serta refleksi bahwa kesulitan belajar dapat muncul ketika penyajian materi atau bentuk tugas belum memberi akses yang memadai.</p><div class="practice-flow"><span>Asesmen awal</span><i>→</i><span>Peta kebutuhan</span><i>→</i><span>DUP</span><i>→</i><span>Tinjau kembali</span></div></div><div class="featured-docs single-doc"><a class="doc-card preview-doc" href="documents/semester-2/pma-lanjut/uts-pma-lanjut.pdf" data-pdf="documents/semester-2/pma-lanjut/uts-pma-lanjut.pdf"><img src="assets/images/artifacts-sem2/pma-lanjut-uts.jpg" alt="Pratinjau UTS PMA Lanjut"><div><b>Laporan Asesmen Awal dan DUP</b><span>Bukti keputusan pembelajaran yang diarahkan oleh data kebutuhan murid.</span></div></a></div></div>
+              <div class="before-after"><div><small>DULU</small><b>Adil mudah dimaknai sebagai tugas dan cara belajar yang seragam.</b></div><div><small>SEKARANG</small><b>Tujuan dapat setara dengan akses dan dukungan yang berbeda.</b></div><div><small>SELANJUTNYA</small><b>Saya akan menggunakan asesmen awal untuk merancang akses sejak awal.</b></div></div>
+            </article>
+
+            <article class="reflection-panel" data-panel="s2-ppl">
+              <div class="reflection-title"><div><span class="chapter">REFLEKSI 03 · SEMESTER II</span><h3>Praktik Pengalaman Lapangan Mandiri</h3><p>Mengubah praktik mengajar menjadi siklus merencanakan, mengamati bukti, merefleksi, dan memperbaiki.</p></div><img src="assets/emblems/ppl-mandiri.svg" alt="Emblem PPL Mandiri"></div>
+              <div class="fourc-grid">
+                <div class="fourc connection"><span>C</span><h4>Connection</h4><p>PPL Mandiri menjadi tempat saya menguji konsep perkuliahan dalam keadaan kelas yang sebenarnya. Pada Siklus IV, materi aturan diajarkan dengan memadukan Problem Based Learning, Teaching at the Right Level, bacaan dan LKPD bertingkat, serta media pancing ikan. Murid dikelompokkan berdasarkan kebutuhan literasi dengan tujuan pembelajaran yang sama. Dari 20 murid yang mengikuti asesmen akhir, 19 memperoleh nilai minimal 70, sedangkan satu murid memperoleh nilai 50 dan membutuhkan remedial.</p></div>
+                <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Tantangan terbesar adalah membedakan keaktifan dengan pemahaman. Media pancing membuat pembelajaran hidup, tetapi kesenangan menggunakan media tidak otomatis membuktikan semua murid memahami alasan pentingnya aturan. Nilai dari soal dengan tingkat kesulitan berbeda juga tidak dapat langsung dibandingkan seolah-olah menunjukkan penguasaan konsep yang sama. Pemetaan literasi belum sepenuhnya menggambarkan pengetahuan awal murid mengenai materi aturan.</p></div>
+                <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Praktik mengajar merupakan proses berulang: merencanakan, melaksanakan, mengamati, merefleksikan, lalu memperbaiki. TaRL membantu menyesuaikan dukungan dengan kemampuan aktual murid, sedangkan PBL membawa materi ke persoalan yang dekat dengan kehidupan. Asesmen formatif perlu menangkap kualitas partisipasi, tingkat kemandirian, pemahaman, kerja sama, dan bantuan yang masih dibutuhkan. Umpan balik Guru Pamong membantu saya melihat bagian yang terlewat saat mengajar.</p></div>
+                <div class="fourc change"><span>C</span><h4>Change</h4><p>Asesmen literasi akan saya lengkapi dengan pertanyaan diagnostik mengenai konsep. Daftar cek partisipasi digunakan agar setiap murid memperoleh kesempatan memakai media dan menjelaskan jawabannya. Seluruh kelompok akan memperoleh beberapa pertanyaan inti yang sama. CRT diperkuat melalui contoh aturan dari keluarga dan masyarakat Ambon tanpa menganggap semua keluarga memiliki kebiasaan yang sama. Murid yang belum mencapai tujuan diberi penguatan serta asesmen ulang, dengan alokasi waktu yang lebih realistis.</p></div>
+              </div>
+              <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Refleksi praktik yang memuat keberhasilan, kekurangan, dan tindak lanjut.</h4><p><b>Artefak pilihan:</b> LK 4.4 Refleksi PPLM Siklus IV, didukung Modul Ajar TaRL Final dan Asesmen Siklus IV. LK 4.4 dipilih karena tidak hanya menampilkan bagian yang berhasil, tetapi juga kekurangan, hasil asesmen, masukan Guru Pamong, dan rencana tindak lanjut.</p><p><b>Bagian yang paling mendukung:</b> analisis penggunaan media pancing, rekapitulasi hasil asesmen akhir, umpan balik Guru Pamong, serta rencana penambahan asesmen diagnostik konsep, daftar cek partisipasi, pertanyaan inti yang sama, penguatan CRT, remedial, dan perbaikan alokasi waktu.</p><div class="practice-flow"><span>Rencana</span><i>→</i><span>Praktik</span><i>→</i><span>Bukti</span><i>→</i><span>Perbaikan</span></div></div><div class="featured-docs three-docs"><a class="doc-card preview-doc" href="documents/semester-2/ppl-mandiri/refleksi-pplm-siklus-iv.pdf" data-pdf="documents/semester-2/ppl-mandiri/refleksi-pplm-siklus-iv.pdf"><img src="assets/images/artifacts-sem2/ppl-refleksi.jpg" alt="Pratinjau Refleksi PPLM"><div><b>Refleksi PPLM Siklus IV</b><span>Keberhasilan, kekurangan, umpan balik, dan rencana perbaikan.</span></div></a><a class="doc-card preview-doc" href="documents/semester-2/ppl-mandiri/modul-ajar-tarl-final.pdf" data-pdf="documents/semester-2/ppl-mandiri/modul-ajar-tarl-final.pdf"><img src="assets/images/artifacts-sem2/ppl-modul.jpg" alt="Pratinjau Modul Ajar TaRL"><div><b>Modul Ajar TaRL Final</b><span>Rancangan pembelajaran bertingkat dengan tujuan yang sama.</span></div></a><a class="doc-card preview-doc" href="documents/semester-2/ppl-mandiri/asesmen-siklus-iv.pdf" data-pdf="documents/semester-2/ppl-mandiri/asesmen-siklus-iv.pdf"><img src="assets/images/artifacts-sem2/ppl-asesmen.jpg" alt="Pratinjau Asesmen Siklus IV"><div><b>Asesmen Siklus IV</b><span>Bukti hasil belajar dan kebutuhan tindak lanjut.</span></div></a></div></div>
+              <div class="before-after"><div><small>DULU</small><b>Kelas yang aktif dan menyenangkan mudah dianggap berhasil.</b></div><div><small>SEKARANG</small><b>Keberhasilan perlu dibaca dari proses, partisipasi, dan bukti pemahaman.</b></div><div><small>SELANJUTNYA</small><b>Saya akan memperkuat diagnostik konsep, pemerataan partisipasi, dan tindak lanjut.</b></div></div>
+            </article>
+
+            <article class="reflection-panel" data-panel="s2-projek">
+              <div class="reflection-title"><div><span class="chapter">REFLEKSI 04 · SEMESTER II</span><h3>Projek Kepemimpinan</h3><p>Melihat kepemimpinan guru sebagai kemampuan mengenali kebutuhan, bekerja bersama, dan menjaga kebermanfaatan inovasi.</p></div><img src="assets/emblems/kepemimpinan.svg" alt="Emblem Projek Kepemimpinan"></div>
+              <div class="fourc-grid">
+                <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Mata kuliah Projek Kepemimpinan mengubah pemahaman saya bahwa kepemimpinan guru tidak hanya terlihat ketika seseorang menjadi ketua atau memegang jabatan. Kelompok kami merancang Aplikasi Absensi Sekolah Berbasis Pengenalan Wajah untuk membantu pengelolaan kehadiran murid di SD Negeri 70 Ambon. Saya menjalankan peran sebagai Lead Developer dan Quality Assurance yang berkaitan dengan pengembangan aplikasi, integrasi fitur, sistem dan basis data, pengujian fungsi, identifikasi kesalahan, serta perbaikan.</p></div>
+                <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Inovasi digital tidak cukup hanya terlihat menarik atau memiliki banyak fitur. Aplikasi harus berangkat dari kebutuhan pengguna, dapat digunakan pada perangkat yang tersedia, mempertimbangkan keterbatasan jaringan, dan memiliki mekanisme pemeliharaan. Pengenalan wajah juga menimbulkan persoalan privasi serta keamanan data murid. Proposal ini masih berada pada tahap perencanaan dan pengembangan awal sehingga keberhasilan implementasi dan dampaknya belum dapat dinyatakan selesai.</p></div>
+                <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama yang saya pelajari adalah kepemimpinan berbasis pelayanan dan kebutuhan. Projek disusun melalui identifikasi masalah, tujuan SMART, pembagian tugas, Work Breakdown Structure, linimasa, komunikasi dengan mitra, monitoring, evaluasi, mitigasi risiko, dan perencanaan keberlanjutan. Kepemimpinan kolaboratif membutuhkan pembagian peran yang jelas sekaligus komunikasi terbuka agar hasil setiap bagian tetap sesuai dengan kebutuhan sekolah dan tujuan projek.</p></div>
+                <div class="fourc change"><span>C</span><h4>Change</h4><p>Saya akan memulai inovasi dengan validasi kebutuhan pengguna sebelum menentukan fitur. Aplikasi diuji secara bertahap dalam lingkup kecil dan diperbaiki berdasarkan masukan admin, wali kelas, serta kepala sekolah. Hasil pengujian akan didokumentasikan. Persetujuan, keamanan, pembatasan akses, serta penggunaan data wajah hanya untuk absensi harus dibahas sebelum implementasi. Keberhasilan tidak hanya diukur dari aplikasi yang berjalan, tetapi juga dari kemudahan penggunaan, penerimaan pengguna, keamanan data, dan keberlanjutan pemeliharaan.</p></div>
+              </div>
+              <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Proposal sebagai bukti proses kepemimpinan yang terarah dan realistis.</h4><p><b>Artefak pilihan:</b> Proposal Project—Pengembangan Aplikasi Absensi Sekolah Berbasis Pengenalan Wajah sebagai Inovasi Digital dalam Pengelolaan Kehadiran Murid di SD Negeri 70 Ambon. Proposal memperlihatkan proses sejak kebutuhan dikenali, tujuan dirumuskan, tim dibentuk, tanggung jawab dibagi, hingga risiko dan keberlanjutan dipertimbangkan.</p><p><b>Bagian yang paling mendukung:</b> latar belakang kebutuhan sekolah, pembagian peran, SMART Goals, Work Breakdown Structure, indikator keberhasilan, monitoring, mitigasi risiko, linimasa, dan rencana keberlanjutan. Linimasa membedakan kegiatan yang sudah dilakukan, sedang berjalan, dan masih direncanakan.</p><div class="practice-flow"><span>Validasi kebutuhan</span><i>→</i><span>Kolaborasi</span><i>→</i><span>Uji terbatas</span><i>→</i><span>Keberlanjutan</span></div></div><div class="featured-docs single-doc"><a class="doc-card preview-doc" href="documents/semester-2/projek-kepemimpinan/proposal-project.pdf" data-pdf="documents/semester-2/projek-kepemimpinan/proposal-project.pdf"><img src="assets/images/artifacts-sem2/projek-proposal.jpg" alt="Pratinjau Proposal Projek"><div><b>Proposal Project Aplikasi Absensi</b><span>Rancangan inovasi digital, pembagian peran, risiko, dan keberlanjutan.</span></div></a></div></div>
+              <div class="before-after"><div><small>DULU</small><b>Inovasi mudah dinilai dari tampilan dan banyaknya fitur.</b></div><div><small>SEKARANG</small><b>Inovasi harus berangkat dari kebutuhan, aman, teruji, dan berkelanjutan.</b></div><div><small>SELANJUTNYA</small><b>Saya akan memvalidasi kebutuhan dan mendokumentasikan setiap keputusan perbaikan.</b></div></div>
+            </article>
+
+            <article class="reflection-panel" data-panel="s2-kepulauan">
+              <div class="reflection-title"><div><span class="chapter">REFLEKSI 05 · SEMESTER II</span><h3>Pendidikan Kepulauan</h3><p>Menghadirkan budaya, lingkungan, dan pengetahuan masyarakat Maluku sebagai sumber belajar yang kontekstual.</p></div><img src="assets/emblems/kepulauan.svg" alt="Emblem Pendidikan Kepulauan"></div>
+              <div class="fourc-grid">
+                <div class="fourc connection"><span>C</span><h4>Connection</h4><p>Pendidikan Kepulauan memiliki hubungan pribadi dengan latar belakang saya yang lahir dan tumbuh di Pulau Rhun, Kecamatan Banda, kemudian memperoleh pengalaman mengajar di Maluku. Wilayah kepulauan bukan sekadar letak geografis sekolah. Di dalamnya terdapat budaya, sumber daya alam, bahasa, pekerjaan masyarakat, pengetahuan keluarga, dan cara hidup yang dapat diolah menjadi sumber belajar. Melalui kajian muatan lokal, saya membawa potensi Maluku seperti gandaria dan Pela Gandong ke dalam pembelajaran.</p></div>
+                <div class="fourc challenge"><span>C</span><h4>Challenge</h4><p>Sebelumnya, budaya dan potensi daerah lebih sering saya tempatkan sebagai contoh tambahan. Mata kuliah ini mengubah pandangan tersebut: potensi lokal dapat menjadi titik berangkat dalam menentukan materi, kegiatan, sumber belajar, produk, kemitraan, dan asesmen. Namun, konteks lokal tidak boleh dipaksakan. Jika gandaria tidak tersedia, pembelajaran tetap dapat berlangsung melalui foto, video, wawancara, atau cerita masyarakat. Kontekstual berarti berpijak pada kondisi nyata, bukan sekadar memakai nama unsur lokal.</p></div>
+                <div class="fourc concept"><span>C</span><h4>Concept</h4><p>Konsep utama yang saya peroleh adalah pengembangan kurikulum dan pembelajaran yang peka terhadap karakter wilayah kepulauan. Buku tetap penting, tetapi lingkungan, keluarga, petani, tokoh adat, dan warga dapat melengkapi sumber pengetahuan. Muatan lokal dapat mengembangkan literasi sains, kepedulian lingkungan, kebanggaan budaya, keterampilan sosial, kreativitas, dan pemahaman awal tentang nilai ekonomi melalui kegiatan mengamati, bertanya, mewawancarai, mengolah informasi, menghasilkan karya, dan memikirkan pelestarian.</p></div>
+                <div class="fourc change"><span>C</span><h4>Change</h4><p>Sebelum memilih muatan lokal, saya akan memetakan potensi yang dekat dengan kehidupan murid dan tersedia di sekitar sekolah. Keluarga atau warga dapat dilibatkan sebagai narasumber, kemudian pengetahuan masyarakat dibandingkan dan diperkaya dengan sumber ilmiah sederhana. Asesmen mencakup proses dan produk: ketelitian mengamati, kemampuan mencari informasi, kerja sama, komunikasi, karya, dan gagasan pelestarian. Produk dapat dipajang atau didokumentasikan agar pembelajaran tidak berhenti setelah penilaian.</p></div>
+              </div>
+              <div class="artifact-analysis"><div class="analysis-copy"><span class="label">Analisis Artefak</span><h4>Potensi lokal sebagai titik awal pembelajaran yang realistis.</h4><p><b>Artefak pilihan:</b> LK 7.3 Analisis dan Pengembangan Muatan Lokal Gandaria sebagai Potensi Unggulan Maluku, didukung LK 7.2 tentang pembelajaran berbasis budaya Pela Gandong. LK 7.3 memperlihatkan perjalanan dari identifikasi potensi lokal hingga rancangan pembelajaran yang mungkin diterapkan.</p><p><b>Bagian yang paling mendukung:</b> analisis nilai gandaria dan projek “Jejak Gandaria Maluku: Kenali, Manfaatkan, dan Lestarikan”, tahapan tiga pertemuan, asesmen proses dan produk, pelibatan masyarakat, serta keberlanjutan yang tidak memaksakan penanaman apabila sekolah belum memiliki bibit, lahan, izin, atau pendamping.</p><div class="practice-flow"><span>Kenali potensi</span><i>→</i><span>Hubungkan budaya</span><i>→</i><span>Buat karya</span><i>→</i><span>Lestarikan</span></div></div><div class="featured-docs"><a class="doc-card preview-doc" href="documents/semester-2/pendidikan-kepulauan/lk-7-3-gandaria.pdf" data-pdf="documents/semester-2/pendidikan-kepulauan/lk-7-3-gandaria.pdf"><img src="assets/images/artifacts-sem2/kepulauan-gandaria.jpg" alt="Pratinjau LK Gandaria"><div><b>LK 7.3 Gandaria Maluku</b><span>Analisis potensi lokal dan rancangan projek kontekstual.</span></div></a><a class="doc-card preview-doc" href="documents/semester-2/pendidikan-kepulauan/lk-7-2-pela-gandong.pdf" data-pdf="documents/semester-2/pendidikan-kepulauan/lk-7-2-pela-gandong.pdf"><img src="assets/images/artifacts-sem2/kepulauan-pela.jpg" alt="Pratinjau LK Pela Gandong"><div><b>LK 7.2 Pela Gandong</b><span>Budaya lokal sebagai sumber nilai dan pengalaman belajar.</span></div></a></div></div>
+              <div class="before-after"><div><small>DULU</small><b>Budaya dan potensi daerah lebih sering menjadi contoh tambahan.</b></div><div><small>SEKARANG</small><b>Potensi lokal dapat menjadi titik awal materi, kegiatan, asesmen, dan kemitraan.</b></div><div><small>SELANJUTNYA</small><b>Saya akan merancang pembelajaran lokal yang kontekstual, ilmiah, dan realistis.</b></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="artefak-2" class="section artifact-section semester-two-artifacts">
+        <div class="wrap">
+          <div class="section-head reveal"><div><span class="section-kicker">Museum Digital Semester II</span><h2>Artefak sebagai <span>bukti perjalanan reflektif.</span></h2></div><p>Setiap dokumen dipilih karena mendukung isi refleksi dan memperlihatkan hubungan antara konsep, pengalaman, bukti, serta rencana perbaikan.</p></div>
+          <div class="artifact-filters reveal"><button class="active" data-filter="all">Semua</button><button data-filter="s2-pse">PSE</button><button data-filter="s2-pma">PMA Lanjut</button><button data-filter="s2-ppl">PPL Mandiri</button><button data-filter="s2-projek">Kepemimpinan</button><button data-filter="s2-kepulauan">Kepulauan</button></div>
+          <div class="artifact-grid">
+            <article class="artifact-item reveal" data-category="s2-pse"><img src="assets/images/artifacts-sem2/pse-uts.jpg" alt="Artefak UTS PSE"><div class="artifact-info"><span>PSE · UTS</span><h3>Modul Ajar Terintegrasi PSE</h3><p>Pemetaan CASEL, keteladanan guru, pengelolaan emosi, dan refleksi.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/pse/uts-pse.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/pse/uts-pse.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-pma"><img src="assets/images/artifacts-sem2/pma-lanjut-uts.jpg" alt="Artefak UTS PMA Lanjut"><div class="artifact-info"><span>PMA Lanjut · UTS</span><h3>Asesmen Awal dan DUP</h3><p>Data literasi, pemetaan kebutuhan, dan rancangan akses belajar.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/pma-lanjut/uts-pma-lanjut.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/pma-lanjut/uts-pma-lanjut.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-ppl"><img src="assets/images/artifacts-sem2/ppl-refleksi.jpg" alt="Artefak refleksi PPLM"><div class="artifact-info"><span>PPL Mandiri · Refleksi</span><h3>Refleksi PPLM Siklus IV</h3><p>Keberhasilan, kekurangan, umpan balik, dan rencana tindak lanjut.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/ppl-mandiri/refleksi-pplm-siklus-iv.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/ppl-mandiri/refleksi-pplm-siklus-iv.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-ppl"><img src="assets/images/artifacts-sem2/ppl-modul.jpg" alt="Artefak Modul Ajar TaRL"><div class="artifact-info"><span>PPL Mandiri · Modul</span><h3>Modul Ajar TaRL Final</h3><p>Dukungan belajar bertingkat dengan tujuan pembelajaran yang sama.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/ppl-mandiri/modul-ajar-tarl-final.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/ppl-mandiri/modul-ajar-tarl-final.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-ppl"><img src="assets/images/artifacts-sem2/ppl-asesmen.jpg" alt="Artefak Asesmen Siklus IV"><div class="artifact-info"><span>PPL Mandiri · Asesmen</span><h3>Asesmen Siklus IV</h3><p>Bukti capaian murid dan dasar penyusunan remedial.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/ppl-mandiri/asesmen-siklus-iv.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/ppl-mandiri/asesmen-siklus-iv.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-projek"><img src="assets/images/artifacts-sem2/projek-proposal.jpg" alt="Artefak Proposal Projek"><div class="artifact-info"><span>Kepemimpinan · Proposal</span><h3>Aplikasi Absensi Pengenalan Wajah</h3><p>Kebutuhan sekolah, pembagian peran, pengujian, risiko, dan keberlanjutan.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/projek-kepemimpinan/proposal-project.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/projek-kepemimpinan/proposal-project.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-kepulauan"><img src="assets/images/artifacts-sem2/kepulauan-gandaria.jpg" alt="Artefak Gandaria"><div class="artifact-info"><span>Kepulauan · Muatan Lokal</span><h3>LK 7.3 Gandaria Maluku</h3><p>Potensi lokal sebagai dasar projek pembelajaran yang kontekstual.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/pendidikan-kepulauan/lk-7-3-gandaria.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/pendidikan-kepulauan/lk-7-3-gandaria.pdf" target="_blank">Buka PDF</a></div></div></article>
+            <article class="artifact-item reveal" data-category="s2-kepulauan"><img src="assets/images/artifacts-sem2/kepulauan-pela.jpg" alt="Artefak Pela Gandong"><div class="artifact-info"><span>Kepulauan · Budaya</span><h3>LK 7.2 Pela Gandong</h3><p>Budaya Maluku sebagai sumber nilai, kolaborasi, dan pengalaman belajar.</p><div><button class="tiny-btn preview-doc" data-pdf="documents/semester-2/pendidikan-kepulauan/lk-7-2-pela-gandong.pdf">Pratinjau</button><a class="tiny-btn alt" href="documents/semester-2/pendidikan-kepulauan/lk-7-2-pela-gandong.pdf" target="_blank">Buka PDF</a></div></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="refleksi-akhir-2" class="section final-section">
+        <div class="wrap">
+          <div class="final-card final-card-background semester-two-final reveal">
+            <img class="final-card-bgimage" src="assets/images/final/refleksi-akhir-bg-clean.png" alt="" aria-hidden="true">
+            <div class="final-copy"><span class="section-kicker light-kicker">Refleksi Akhir Semester II</span><h2>Belajar membaca kebutuhan, bukti, dan <span>konteks secara lebih utuh.</span></h2><p>Lima pengalaman belajar Semester II memperkuat pemahaman saya bahwa pembelajaran tidak cukup hanya tersusun rapi. Guru perlu memperhatikan kesiapan sosial emosional, menggunakan data asesmen, menguji rancangan dalam praktik, bekerja secara kolaboratif, dan menghubungkan pembelajaran dengan kehidupan murid serta lingkungannya.</p><p>Perubahan yang ingin saya jaga adalah kebiasaan memulai dari kebutuhan nyata, mengumpulkan bukti sebelum mengambil keputusan, memberi akses yang lebih adil, menerima umpan balik, serta merancang tindak lanjut yang realistis. Dengan demikian, refleksi tidak berhenti sebagai laporan, tetapi menjadi dasar untuk memperbaiki pembelajaran berikutnya.</p><div class="commitment-grid"><div><b>01</b><span>Membangun rasa aman</span></div><div><b>02</b><span>Menggunakan data murid</span></div><div><b>03</b><span>Menguji dan memperbaiki</span></div><div><b>04</b><span>Berpijak pada konteks</span></div></div><div class="final-actions"><a class="btn btn-primary" href="documents/semester-2/LK-2-Refleksi-Semester-II.pdf" target="_blank" rel="noopener">Buka LK 2 Semester II</a><a class="btn btn-ghost" href="semester-1.html">Lihat Semester I</a></div></div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="mini reveal">
-      <h4>Kekurangan dan Kendala</h4>
-      <p>Kendala utama adalah pengelolaan waktu, pemerataan partisipasi murid, penyederhanaan instruksi, serta pengendalian kelas saat murid terlalu antusias maupun dalam kondisi kelas mulai keos.</p>
-    </div>
-    <div class="mini reveal">
-      <h4>Perubahan untuk Kelas Berbeda</h4>
-      <p>Jika digunakan pada kelas berbeda, artefak perlu disesuaikan dengan jumlah murid, karakteristik kelas, ketersediaan media, kemampuan membaca, dan keberanian murid berbicara.</p>
-    </div>
-  </div>
+  </main>
 
-  <article class="theory card reveal">
-    <h3>Kajian Teori yang Diadopsi</h3>
-    <p>
-      Dalam penyusunan produk pembelajaran, saya mengadopsi prinsip pembelajaran konstruktivistik. Murid diberi kesempatan membangun pemahaman melalui pengalaman, pengamatan, diskusi, pemecahan masalah, dan refleksi. Murid tidak hanya menerima informasi dari guru, tetapi ikut terlibat menemukan makna pembelajaran.
-    </p>
-    <p>
-      Pada Siklus I, model <em>Experiential Learning</em> digunakan karena murid kelas I lebih mudah memahami materi melalui pengalaman langsung. Pada Siklus II, model <em>Problem Based Learning</em> digunakan karena materi pengamalan Pancasila dapat dikaitkan dengan masalah nyata seperti bullying, gotong royong, menaati aturan, dan sikap saling membantu. Pada Siklus III, model <em>Contextual Teaching and Learning</em> digunakan karena materi tradisi keluarga dan masyarakat sekitar sangat dekat dengan kehidupan murid.
-    </p>
-    <p>
-      Prinsip <strong>Deep Learning</strong> diterapkan dengan mendorong murid memahami makna, menghubungkan materi dengan kehidupan nyata, bekerja sama, menyampaikan pendapat, dan melakukan refleksi. Dengan demikian, artefak pembelajaran menjadi alat untuk menghadirkan pembelajaran yang aktif, kontekstual, dan bermakna.
-    </p>
-  </article>
-</div>
+  <footer class="footer"><div class="wrap footer-grid"><div><b>PORTOFOLIO REFLEKSI MK SEMESTER I &amp; II PPG</b><span>Maruf Hamen, S.Pd · Pendidikan Guru Sekolah Dasar</span></div><div><span>Universitas Pattimura · PPG Prajabatan 2026</span><small></small></div></div></footer>
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
 
-  </div>
-</section>
-</section>
+  <dialog class="pdf-modal" id="pdfModal"><div class="modal-head"><div><b>Pratinjau Artefak</b><span>Buka PDF di tab baru jika pratinjau tidak tersedia di perangkat Anda.</span></div><button id="closeModal" aria-label="Tutup">×</button></div><iframe id="pdfFrame" title="Pratinjau PDF"></iframe><div class="modal-foot"><a id="openPdf" class="btn btn-primary" target="_blank" rel="noopener">Buka PDF di Tab Baru</a></div></dialog>
 
-<section id="refleksi" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Refleksi <span>Akhir</span></h1>
-    <p>Catatan pertumbuhan diri selama PPL Terbimbing, termasuk tantangan, solusi, umpan balik, kekuatan, dan tindak lanjut.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="reflection">
-  <article class="reflect-card card reveal">
-    <h3>Hal yang Dipelajari</h3>
-    <p>Selama PPL Terbimbing, saya belajar bahwa menjadi guru bukan hanya menyampaikan materi, tetapi juga memahami kebutuhan murid, menyusun perangkat, memilih media, mengelola kelas, dan melakukan refleksi.</p>
-  </article>
-  <article class="reflect-card card reveal">
-    <h3>Tantangan Terbesar</h3>
-    <p>Tantangan terbesar adalah mengelola kelas agar semua murid terlibat secara merata. Sebagian murid aktif, tetapi sebagian lain masih pasif, kurang percaya diri, atau menunggu arahan teman.</p>
-  </article>
-  <article class="reflect-card card reveal">
-    <h3>Solusi yang Dilakukan</h3>
-    <p>Saya memperjelas instruksi, membagi peran anggota kelompok, menggunakan pertanyaan pemantik bertahap, memberi apresiasi, dan menggunakan media secara lebih terarah.</p>
-  </article>
-  <article class="reflect-card card reveal">
-    <h3>Umpan Balik Guru Pamong</h3>
-    <p>Guru Pamong memberi masukan agar saya lebih memperhatikan manajemen waktu, kejelasan instruksi, pemerataan partisipasi murid, dan penguatan pada bagian penutup.</p>
-  </article>
-  <article class="reflect-card card reveal">
-    <h3>Kekuatan Diri</h3>
-    <p>Kekuatan saya terlihat pada kesiapan menyusun perangkat, kemampuan memilih media yang sesuai, dan usaha mengaitkan materi dengan pengalaman nyata murid.</p>
-  </article>
-  <article class="reflect-card card reveal">
-    <h3>Rencana Tindak Lanjut</h3>
-    <p>Pada PPL Mandiri, saya akan memperbaiki LKPD, menyiapkan media sesuai urutan kegiatan, membuat batas waktu yang jelas, membagi peran kelompok, dan melakukan refleksi akhir.</p>
-  </article>
-</div>
-
-  </div>
-</section>
-</section>
-
-<section id="model-guru" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Model Guru <span>yang Dituju</span></h1>
-    <p>Misi, kompetensi, dan karakter guru profesional yang ingin dibangun.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="model">
-  <article class="mission reveal">
-    <h3>Misi Pribadi sebagai Calon Guru</h3>
-    <p>
-      Misi saya adalah menjadi guru sekolah dasar yang mampu menuntun murid belajar dengan hati, menghadirkan pembelajaran yang dekat dengan kehidupan mereka, serta membantu murid tumbuh sebagai pribadi yang percaya diri, berkarakter, dan memiliki harapan untuk masa depan. Saya ingin menjadi guru yang tidak hanya mengajar, tetapi juga menemani murid menemukan potensi terbaiknya.
-    </p>
-  </article>
-
-  <div class="competence">
-    <div class="competence-item reveal"><b>Kompetensi Pedagogik</b>Memahami karakteristik murid, merancang pembelajaran sesuai kebutuhan, dan melakukan asesmen yang mendukung perkembangan murid.</div>
-    <div class="competence-item reveal"><b>Kompetensi Kepribadian</b>Menjadi pribadi yang jujur, sabar, bertanggung jawab, dan mampu menjadi teladan bagi murid.</div>
-    <div class="competence-item reveal"><b>Kompetensi Sosial</b>Membangun komunikasi yang baik dengan murid, guru, orang tua, dan lingkungan sekolah.</div>
-    <div class="competence-item reveal"><b>Kompetensi Profesional</b>Menguasai materi pembelajaran, terus belajar, dan menggunakan berbagai strategi serta media yang relevan.</div>
-  </div>
-</div>
-
-  </div>
-</section>
-</section>
-
-<section id="filosofi" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Filosofi <span>Mengajar</span></h1>
-    <p>Prinsip, keyakinan, dan nilai yang mendasari praktik pengajaran selama PPL Terbimbing.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<article class="philosophy card reveal">
-  <p>
-    Bagi saya, mengajar adalah proses menuntun murid untuk tumbuh sesuai kodrat, potensi, dan pengalaman hidupnya. Guru bukan satu-satunya sumber pengetahuan, tetapi menjadi fasilitator yang membantu murid memahami dunia melalui kegiatan yang bermakna. Saya percaya bahwa setiap murid memiliki keunikan, latar belakang, dan cara belajar yang berbeda.
-  </p>
-  <p>
-    Filosofi mengajar saya dipengaruhi oleh pemikiran Ki Hadjar Dewantara tentang pendidikan sebagai proses menuntun segala kekuatan kodrat yang ada pada anak. Dalam praktik PPL Terbimbing, prinsip tersebut saya coba wujudkan melalui pembelajaran yang tidak hanya berpusat pada guru, tetapi memberi kesempatan kepada murid untuk mengalami, mengamati, memecahkan masalah, dan menghubungkan materi dengan kehidupan sehari-hari.
-  </p>
-  <p>
-    Saya meyakini bahwa guru profesional adalah guru yang terus belajar dan berani merefleksikan diri. Pengalaman PPL Terbimbing menunjukkan bahwa masih ada kelemahan yang perlu saya perbaiki, terutama dalam mengelola waktu, mengatur kelas, dan meratakan partisipasi murid. Namun, pengalaman tersebut juga menguatkan keyakinan saya bahwa setiap proses belajar mengajar adalah ruang untuk bertumbuh.
-  </p>
-</article>
-
-  </div>
-</section>
-</section>
-
-<section id="lampiran" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Lampiran <span>dan Dokumen</span></h1>
-    <p>Dokumen pendukung e-portfolio, modul ajar, dan lembar refleksi praktik pembelajaran terbimbing.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="attach card reveal">
-  <h3>Daftar Lampiran</h3>
-  <div class="attach-list">
-    <a class="file" href="./dokumen/modul-ajar-siklus-1.pdf" target="_blank"><span><b>Modul Ajar Siklus I</b><small>Pendidikan Pancasila kelas I: Identitas Diri dan Keberagaman</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/modul-ajar-siklus-2.pdf" target="_blank"><span><b>Modul Ajar Siklus II</b><small>Pendidikan Pancasila kelas IV: Pengamalan Pancasila</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/modul-ajar-siklus-3.pdf" target="_blank"><span><b>Modul Ajar Siklus III</b><small>IPAS kelas III: Tradisi Keluarga dan Budaya Maluku</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lk-3-refleksi-praktik-asistensi.pdf" target="_blank"><span><b>LK 3 Refleksi Praktik Asistensi</b><small>Dokumen refleksi tahap asistensi</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lk-4-refleksi-siklus-1.pdf" target="_blank"><span><b>LK 4 Refleksi Siklus I</b><small>Praktik pembelajaran terbimbing Siklus I</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lk-4-refleksi-siklus-2.pdf" target="_blank"><span><b>LK 4 Refleksi Siklus II</b><small>Praktik pembelajaran terbimbing Siklus II</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lk-4-refleksi-siklus-3.pdf" target="_blank"><span><b>LK 4 Refleksi Siklus III</b><small>Praktik pembelajaran terbimbing Siklus III</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lampiran-7.pdf" target="_blank"><span><b>Lampiran 7</b><small>Instrumen Penilaian Penyusunan Perangkat Pembelajaran</small></span><strong>Unduh</strong></a>
-    <a class="file" href="./dokumen/lampiran-8.pdf" target="_blank"><span><b>Lampiran 8</b><small>Instrumen Penilaian Praktik Mengajar</small></span><strong>Unduh</strong></a>
-  </div>
-</div>
-
-  </div>
-</section>
-</section>
-
-<section id="kontak" class="page-section">
-<main class="page-hero">
-  <div class="wrap reveal">
-    <div class="breadcrumb">E-Portfolio PPG</div>
-    <h1>Kontak <span>Mahasiswa</span></h1>
-    <p>Informasi kontak saya.</p>
-  </div>
-</main>
-  
-<section>
-  <div class="wrap">
-    
-<div class="contact-grid">
-  <div class="page-card card reveal">
-    <h3>Informasi Kontak</h3>
-    <p>
-      E-Portfolio ini disusun sebagai bagian dari refleksi akhir PPL Terbimbing PPG Prajabatan PGSD Universitas Pattimura.
-      Informasi kontak berikut dapat digunakan untuk kebutuhan komunikasi.
-    </p>
-  </div>
-
-  <div class="contact-card reveal">
-    <div class="contact-row"><span>Email</span><b><a href="mailto:marufhamen@gmail.com">marufhamen@gmail.com</a></b></div>
-    <div class="contact-row"><span>WhatsApp</span><b><a href="https://wa.me/6282278362741" target="_blank">082278362741</a></b></div>
-    <div class="contact-row"><span>Instagram</span><b><a href="https://instagram.com/mrf_hmn" target="_blank">@mrf_hmn</a></b></div>
-    <div class="contact-row"><span>Sekolah</span><b>SD Negeri 70 Ambon</b></div>
-  </div>
-</div>
-
-  </div>
-</section>
-</section>
-
-  <footer class="footer">
-    <div class="wrap">© 2026 Maruf Hamen · E-Portfolio PPG Prajabatan · Universitas Pattimura</div>
-  </footer>
-
-  <script>
-
-function runReveal() {
-  const items = document.querySelectorAll(".page-section.active .reveal");
-  items.forEach((item, index) => {
-    item.classList.remove("show");
-    setTimeout(() => item.classList.add("show"), 60 + (index * 35));
-  });
-}
-
-function showPage(pageId, pushHash = true) {
-  const target = document.getElementById(pageId) ? pageId : "beranda";
-
-  document.querySelectorAll(".page-section").forEach(section => {
-    section.classList.toggle("active", section.id === target);
-  });
-
-  document.querySelectorAll("[data-page-link]").forEach(link => {
-    link.classList.toggle("active", link.getAttribute("data-page-link") === target);
-  });
-
-  if (pushHash) {
-    history.replaceState(null, "", "#" + target);
-  }
-
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  setTimeout(runReveal, 120);
-}
-
-document.querySelectorAll("[data-page-link]").forEach(link => {
-  link.addEventListener("click", function(e) {
-    const page = this.getAttribute("data-page-link");
-    if (page) {
-      e.preventDefault();
-      showPage(page);
-    }
-  });
-});
-
-window.addEventListener("load", () => {
-  const initial = location.hash ? location.hash.replace("#", "") : "beranda";
-  showPage(initial, false);
-});
-
-window.addEventListener("hashchange", () => {
-  const current = location.hash ? location.hash.replace("#", "") : "beranda";
-  showPage(current, false);
-});
-
-let autoKenangan;
-let restartKenangan;
-
-function jalanOtomatisKenangan() {
-  const slider = document.querySelector(".home-plp-slider");
-  if (!slider) return;
-
-  slider.scrollLeft += 3.5;
-
-  const batasSetengah = slider.scrollWidth / 2;
-
-  if (slider.scrollLeft >= batasSetengah) {
-    slider.scrollLeft = 0;
-  }
-
-  autoKenangan = requestAnimationFrame(jalanOtomatisKenangan);
-}
-
-function mulaiOtomatisKenangan() {
-  cancelAnimationFrame(autoKenangan);
-  autoKenangan = requestAnimationFrame(jalanOtomatisKenangan);
-}
-
-function berhentiSebentarKenangan() {
-  cancelAnimationFrame(autoKenangan);
-  clearTimeout(restartKenangan);
-
-  restartKenangan = setTimeout(() => {
-    mulaiOtomatisKenangan();
-  }, 2500);
-}
-
-function moveSlide(direction) {
-  const slider = document.querySelector(".home-plp-slider");
-  if (!slider) return;
-
-  const item = slider.querySelector(".home-plp-item");
-  const jarakGeser = item ? item.offsetWidth + 14 : 330;
-
-  berhentiSebentarKenangan();
-
-  slider.scrollBy({
-    left: direction * jarakGeser,
-    behavior: "smooth"
-  });
-}
-
-const sliderKenangan = document.querySelector(".home-plp-slider");
-
-if (sliderKenangan) {
-  sliderKenangan.addEventListener("mouseenter", () => {
-    cancelAnimationFrame(autoKenangan);
-  });
-
-  sliderKenangan.addEventListener("mouseleave", () => {
-    mulaiOtomatisKenangan();
-  });
-
-  sliderKenangan.addEventListener("touchstart", () => {
-    cancelAnimationFrame(autoKenangan);
-  });
-
-  sliderKenangan.addEventListener("touchend", () => {
-    berhentiSebentarKenangan();
-  });
-
-  mulaiOtomatisKenangan();
-}
-
-  </script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
